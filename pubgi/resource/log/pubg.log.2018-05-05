@@ -1,0 +1,566 @@
+2018-05-03 09:58:14,857 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 09:58:14,858 - INFO - template folder: ../templates
+2018-05-03 09:58:17,100 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 09:58:17,100 - INFO - template folder: ../templates
+2018-05-03 09:58:40,319 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:40,982 - INFO - Received API request <Response [404]>: took 0.662368 sec
+2018-05-03 09:58:40,983 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:43,217 - INFO - Received API request <Response [200]>: took 2.233543 sec
+2018-05-03 09:58:43,346 - INFO - New player <Player 'fine_temporis' 'pc-kakao'> added.
+2018-05-03 09:58:43,346 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:44,357 - INFO - Received API request <Response [404]>: took 1.009724 sec
+2018-05-03 09:58:44,357 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:45,224 - INFO - Received API request <Response [404]>: took 0.866669 sec
+2018-05-03 09:58:45,224 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:45,521 - INFO - Received API request <Response [404]>: took 0.295887 sec
+2018-05-03 09:58:45,521 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:46,056 - INFO - Received API request <Response [404]>: took 0.535004 sec
+2018-05-03 09:58:46,057 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:46,434 - INFO - Received API request <Response [404]>: took 0.377533 sec
+2018-05-03 09:58:46,435 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=fine_temporis
+2018-05-03 09:58:46,972 - INFO - Received API request <Response [404]>: took 0.536322 sec
+2018-05-03 09:59:21,455 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 09:59:21,455 - INFO - template folder: ../templates
+2018-05-03 09:59:23,091 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 09:59:23,091 - INFO - template folder: ../templates
+2018-05-03 10:00:30,089 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:00:30,089 - INFO - template folder: ../templates
+2018-05-03 10:00:31,731 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:00:31,731 - INFO - template folder: ../templates
+2018-05-03 10:00:35,507 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-05-03 10:00:37,650 - INFO - Received API request <Response [200]>: took 2.142958 sec
+2018-05-03 10:00:37,651 - INFO - Waiting for API rate limit...
+2018-05-03 10:00:43,657 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-05-03 10:00:44,951 - INFO - Received API request <Response [200]>: took 1.293825 sec
+2018-05-03 10:00:44,951 - INFO - Waiting for API rate limit...
+2018-05-03 10:00:50,958 - INFO - No recent matches were recorded for player 'fine_temporis' [region: 'pc-kakao']
+2018-05-03 10:00:50,958 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/matches/8ccc64b8-186b-4b99-9eaf-a20cf908ed6a
+2018-05-03 10:00:51,297 - INFO - Received API request <Response [200]>: took 0.338673 sec
+2018-05-03 10:00:51,300 - INFO - Waiting for API rate limit...
+2018-05-03 10:00:57,341 - ERROR - 
+2018-05-03 10:01:19,166 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:19,644 - INFO - Received API request <Response [404]>: took 0.478460 sec
+2018-05-03 10:01:19,645 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:21,307 - INFO - Received API request <Response [200]>: took 1.661837 sec
+2018-05-03 10:01:21,363 - INFO - New player <Player 'Oksamit' 'pc-kakao'> added.
+2018-05-03 10:01:21,364 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:21,831 - INFO - Received API request <Response [404]>: took 0.466674 sec
+2018-05-03 10:01:21,831 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:22,100 - INFO - Received API request <Response [404]>: took 0.268426 sec
+2018-05-03 10:01:22,101 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:22,386 - INFO - Received API request <Response [502]>: took 0.285045 sec
+2018-05-03 10:01:22,386 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:22,760 - INFO - Received API request <Response [502]>: took 0.373295 sec
+2018-05-03 10:01:22,760 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:23,157 - INFO - Received API request <Response [404]>: took 0.396840 sec
+2018-05-03 10:01:23,158 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=Oksamit
+2018-05-03 10:01:23,587 - INFO - Received API request <Response [404]>: took 0.429281 sec
+2018-05-03 10:04:13,052 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=Oksamit
+2018-05-03 10:04:15,151 - INFO - Received API request <Response [200]>: took 2.098483 sec
+2018-05-03 10:04:15,151 - INFO - Waiting for API rate limit...
+2018-05-03 10:04:21,157 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=Oksamit
+2018-05-03 10:04:21,716 - INFO - Received API request <Response [200]>: took 0.559393 sec
+2018-05-03 10:04:21,717 - INFO - Waiting for API rate limit...
+2018-05-03 10:04:27,723 - INFO - No recent matches were recorded for player 'Oksamit' [region: 'pc-kakao']
+2018-05-03 10:04:27,724 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/matches/10328638-e56a-4bf3-a9ec-e3fd81c629ce
+2018-05-03 10:04:28,128 - INFO - Received API request <Response [200]>: took 0.404600 sec
+2018-05-03 10:04:28,131 - INFO - Waiting for API rate limit...
+2018-05-03 10:04:34,142 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-kakao/2018/04/20/11/09/4ff6a6da-448b-11e8-a3ee-0a58646fa305-telemetry.json
+2018-05-03 10:04:38,881 - INFO - Received API request <Response [200]>: took 4.739103 sec
+2018-05-03 10:04:47,960 - INFO - Telemetry data added for match <Match '10328638-e56a-4bf3-a9ec-e3fd81c629ce'>
+2018-05-03 10:04:47,960 - INFO - Match <Match '10328638-e56a-4bf3-a9ec-e3fd81c629ce'> added
+2018-05-03 10:04:47,965 - ERROR - 
+2018-05-03 10:49:59,086 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:49:59,857 - INFO - template folder: ../templates
+2018-05-03 10:50:44,062 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:50:44,062 - INFO - template folder: ../templates
+2018-05-03 10:50:45,728 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:50:45,728 - INFO - template folder: ../templates
+2018-05-03 10:51:24,574 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=postonetime
+2018-05-03 10:51:25,142 - INFO - Received API request <Response [404]>: took 0.567907 sec
+2018-05-03 10:51:25,143 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=postonetime
+2018-05-03 10:51:26,275 - INFO - Received API request <Response [200]>: took 1.131465 sec
+2018-05-03 10:51:26,323 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=postonetime
+2018-05-03 10:51:26,877 - INFO - Received API request <Response [404]>: took 0.553663 sec
+2018-05-03 10:51:26,877 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=postonetime
+2018-05-03 10:51:27,166 - INFO - Received API request <Response [404]>: took 0.288863 sec
+2018-05-03 10:51:27,167 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=postonetime
+2018-05-03 10:51:27,635 - INFO - Received API request <Response [404]>: took 0.467740 sec
+2018-05-03 10:51:27,635 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=postonetime
+2018-05-03 10:51:27,947 - INFO - Received API request <Response [404]>: took 0.311791 sec
+2018-05-03 10:51:27,948 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=postonetime
+2018-05-03 10:51:28,247 - INFO - Received API request <Response [404]>: took 0.299368 sec
+2018-05-03 10:51:28,248 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=postonetime
+2018-05-03 10:51:28,810 - INFO - Received API request <Response [404]>: took 0.562014 sec
+2018-05-03 10:51:29,109 - ERROR - local variable 'new_player' referenced before assignment
+2018-05-03 10:52:15,735 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:52:15,736 - INFO - template folder: ../templates
+2018-05-03 10:53:34,538 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 10:53:34,538 - INFO - template folder: ../templates
+2018-05-03 10:53:50,333 - INFO - New season stats for player <Player 'postonetime' 'pc-kakao'> added.
+2018-05-03 11:01:18,723 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 11:01:18,723 - INFO - template folder: ../templates
+2018-05-03 11:01:32,550 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 11:01:32,551 - INFO - template folder: ../templates
+2018-05-03 11:01:34,157 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 11:01:34,158 - INFO - template folder: ../templates
+2018-05-03 23:40:13,997 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:40:14,001 - INFO - template folder: ../templates
+2018-05-03 23:40:16,070 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:40:16,070 - INFO - template folder: ../templates
+2018-05-03 23:42:38,821 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:42:38,821 - INFO - template folder: ../templates
+2018-05-03 23:42:40,296 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:42:40,297 - INFO - template folder: ../templates
+2018-05-03 23:43:20,964 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:43:20,965 - INFO - template folder: ../templates
+2018-05-03 23:43:22,465 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:43:22,466 - INFO - template folder: ../templates
+2018-05-03 23:43:38,764 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:43:38,765 - INFO - template folder: ../templates
+2018-05-03 23:43:40,318 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:43:40,319 - INFO - template folder: ../templates
+2018-05-03 23:44:50,135 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:50,650 - INFO - Received API request <Response [404]>: took 0.515067 sec
+2018-05-03 23:44:50,651 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:50,948 - INFO - Received API request <Response [200]>: took 0.296535 sec
+2018-05-03 23:44:50,996 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:51,241 - INFO - Received API request <Response [404]>: took 0.244571 sec
+2018-05-03 23:44:51,242 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:51,493 - INFO - Received API request <Response [404]>: took 0.251233 sec
+2018-05-03 23:44:51,493 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:51,860 - INFO - Received API request <Response [404]>: took 0.366064 sec
+2018-05-03 23:44:51,860 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:52,113 - INFO - Received API request <Response [404]>: took 0.252253 sec
+2018-05-03 23:44:52,113 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:52,379 - INFO - Received API request <Response [404]>: took 0.265470 sec
+2018-05-03 23:44:52,379 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=fine_temporis
+2018-05-03 23:44:52,616 - INFO - Received API request <Response [404]>: took 0.237145 sec
+2018-05-03 23:48:39,574 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:48:39,574 - INFO - template folder: ../templates
+2018-05-03 23:48:41,065 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:48:41,065 - INFO - template folder: ../templates
+2018-05-03 23:50:58,999 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:50:59,000 - INFO - template folder: ../templates
+2018-05-03 23:51:00,518 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:51:00,518 - INFO - template folder: ../templates
+2018-05-03 23:51:21,746 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:51:21,747 - INFO - template folder: ../templates
+2018-05-03 23:51:23,243 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:51:23,243 - INFO - template folder: ../templates
+2018-05-03 23:53:56,643 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:53:56,643 - INFO - template folder: ../templates
+2018-05-03 23:53:58,225 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:53:58,225 - INFO - template folder: ../templates
+2018-05-03 23:59:16,869 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:59:16,869 - INFO - template folder: ../templates
+2018-05-03 23:59:18,373 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-03 23:59:18,374 - INFO - template folder: ../templates
+2018-05-04 00:01:31,706 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:01:31,706 - INFO - template folder: ../templates
+2018-05-04 00:01:33,232 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:01:33,232 - INFO - template folder: ../templates
+2018-05-04 00:02:29,094 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:02:29,094 - INFO - template folder: ../templates
+2018-05-04 00:02:30,708 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:02:30,709 - INFO - template folder: ../templates
+2018-05-04 00:03:24,957 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:03:24,957 - INFO - template folder: ../templates
+2018-05-04 00:03:26,534 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:03:26,534 - INFO - template folder: ../templates
+2018-05-04 00:06:01,348 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:01,348 - INFO - template folder: ../templates
+2018-05-04 00:06:02,943 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:02,943 - INFO - template folder: ../templates
+2018-05-04 00:06:07,174 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:07,174 - INFO - template folder: ../templates
+2018-05-04 00:06:08,752 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:08,752 - INFO - template folder: ../templates
+2018-05-04 00:06:31,477 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:31,478 - INFO - template folder: ../templates
+2018-05-04 00:06:33,125 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:33,126 - INFO - template folder: ../templates
+2018-05-04 00:06:57,815 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:57,815 - INFO - template folder: ../templates
+2018-05-04 00:06:59,490 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:06:59,490 - INFO - template folder: ../templates
+2018-05-04 00:07:57,036 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:07:57,036 - INFO - template folder: ../templates
+2018-05-04 00:07:58,590 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:07:58,590 - INFO - template folder: ../templates
+2018-05-04 00:08:52,333 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:08:52,333 - INFO - template folder: ../templates
+2018-05-04 00:08:53,883 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:08:53,883 - INFO - template folder: ../templates
+2018-05-04 00:09:06,808 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:09:06,808 - INFO - template folder: ../templates
+2018-05-04 00:09:08,421 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:09:08,421 - INFO - template folder: ../templates
+2018-05-04 00:09:39,848 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:09:39,848 - INFO - template folder: ../templates
+2018-05-04 00:09:41,358 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:09:41,358 - INFO - template folder: ../templates
+2018-05-04 00:10:02,904 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:10:02,904 - INFO - template folder: ../templates
+2018-05-04 00:10:04,453 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:10:04,453 - INFO - template folder: ../templates
+2018-05-04 00:11:14,120 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:11:14,121 - INFO - template folder: ../templates
+2018-05-04 00:11:15,662 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 00:11:15,663 - INFO - template folder: ../templates
+2018-05-04 03:47:20,818 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:47:20,824 - INFO - template folder: ../templates
+2018-05-04 03:47:22,400 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:47:22,400 - INFO - template folder: ../templates
+2018-05-04 03:49:42,327 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:49:42,327 - INFO - template folder: ../templates
+2018-05-04 03:49:43,916 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:49:43,916 - INFO - template folder: ../templates
+2018-05-04 03:50:02,272 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:50:02,273 - INFO - template folder: ../templates
+2018-05-04 03:50:04,042 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:50:04,042 - INFO - template folder: ../templates
+2018-05-04 03:50:25,903 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:50:25,903 - INFO - template folder: ../templates
+2018-05-04 03:50:32,837 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:50:32,838 - INFO - template folder: ../templates
+2018-05-04 03:51:02,035 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:51:02,035 - INFO - template folder: ../templates
+2018-05-04 03:51:03,661 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:51:03,662 - INFO - template folder: ../templates
+2018-05-04 03:51:42,821 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:51:42,822 - INFO - template folder: ../templates
+2018-05-04 03:51:44,412 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:51:44,413 - INFO - template folder: ../templates
+2018-05-04 03:53:13,909 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:53:13,910 - INFO - template folder: ../templates
+2018-05-04 03:53:15,477 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:53:15,477 - INFO - template folder: ../templates
+2018-05-04 03:55:53,338 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:55:53,338 - INFO - template folder: ../templates
+2018-05-04 03:55:54,875 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 03:55:54,876 - INFO - template folder: ../templates
+2018-05-04 04:01:28,602 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:01:28,602 - INFO - template folder: ../templates
+2018-05-04 04:01:30,225 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:01:30,226 - INFO - template folder: ../templates
+2018-05-04 04:04:50,135 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:04:50,135 - INFO - template folder: ../templates
+2018-05-04 04:04:51,643 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:04:51,643 - INFO - template folder: ../templates
+2018-05-04 04:05:26,873 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:05:26,873 - INFO - template folder: ../templates
+2018-05-04 04:05:28,396 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:05:28,397 - INFO - template folder: ../templates
+2018-05-04 04:05:57,294 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:05:57,294 - INFO - template folder: ../templates
+2018-05-04 04:05:58,859 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:05:58,859 - INFO - template folder: ../templates
+2018-05-04 04:06:42,690 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:06:42,690 - INFO - template folder: ../templates
+2018-05-04 04:06:44,174 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:06:44,175 - INFO - template folder: ../templates
+2018-05-04 04:07:10,080 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:10,081 - INFO - template folder: ../templates
+2018-05-04 04:07:11,577 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:11,577 - INFO - template folder: ../templates
+2018-05-04 04:07:30,312 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:30,312 - INFO - template folder: ../templates
+2018-05-04 04:07:31,946 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:31,946 - INFO - template folder: ../templates
+2018-05-04 04:07:47,682 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:47,683 - INFO - template folder: ../templates
+2018-05-04 04:07:49,153 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:07:49,153 - INFO - template folder: ../templates
+2018-05-04 04:08:08,079 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:08:08,079 - INFO - template folder: ../templates
+2018-05-04 04:08:09,600 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:08:09,600 - INFO - template folder: ../templates
+2018-05-04 04:08:18,436 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:08:18,437 - INFO - template folder: ../templates
+2018-05-04 04:08:19,963 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:08:19,963 - INFO - template folder: ../templates
+2018-05-04 04:09:19,677 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:09:19,677 - INFO - template folder: ../templates
+2018-05-04 04:09:21,245 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:09:21,245 - INFO - template folder: ../templates
+2018-05-04 04:10:26,769 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:10:26,769 - INFO - template folder: ../templates
+2018-05-04 04:10:28,288 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:10:28,288 - INFO - template folder: ../templates
+2018-05-04 04:13:54,710 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:13:54,711 - INFO - template folder: ../templates
+2018-05-04 04:13:56,252 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:13:56,253 - INFO - template folder: ../templates
+2018-05-04 04:18:03,872 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:18:03,873 - INFO - template folder: ../templates
+2018-05-04 04:18:05,533 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:18:05,534 - INFO - template folder: ../templates
+2018-05-04 04:25:12,799 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:25:12,799 - INFO - template folder: ../templates
+2018-05-04 04:25:14,353 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:25:14,353 - INFO - template folder: ../templates
+2018-05-04 04:25:47,946 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:25:47,947 - INFO - template folder: ../templates
+2018-05-04 04:25:49,507 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:25:49,508 - INFO - template folder: ../templates
+2018-05-04 04:26:22,495 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:26:22,495 - INFO - template folder: ../templates
+2018-05-04 04:26:24,071 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:26:24,072 - INFO - template folder: ../templates
+2018-05-04 04:37:40,456 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:37:40,457 - INFO - template folder: ../templates
+2018-05-04 04:37:42,003 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:37:42,003 - INFO - template folder: ../templates
+2018-05-04 04:39:10,784 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:39:10,784 - INFO - template folder: ../templates
+2018-05-04 04:39:12,335 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:39:12,335 - INFO - template folder: ../templates
+2018-05-04 04:39:50,341 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:39:50,342 - INFO - template folder: ../templates
+2018-05-04 04:39:51,910 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:39:51,911 - INFO - template folder: ../templates
+2018-05-04 04:40:29,843 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:40:29,843 - INFO - template folder: ../templates
+2018-05-04 04:40:31,440 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:40:31,441 - INFO - template folder: ../templates
+2018-05-04 04:40:47,104 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:40:47,104 - INFO - template folder: ../templates
+2018-05-04 04:40:48,636 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:40:48,636 - INFO - template folder: ../templates
+2018-05-04 04:41:48,523 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:41:48,524 - INFO - template folder: ../templates
+2018-05-04 04:41:50,142 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:41:50,142 - INFO - template folder: ../templates
+2018-05-04 04:43:22,956 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:43:22,956 - INFO - template folder: ../templates
+2018-05-04 04:43:24,531 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:43:24,532 - INFO - template folder: ../templates
+2018-05-04 04:45:52,538 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:45:52,538 - INFO - template folder: ../templates
+2018-05-04 04:45:54,100 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:45:54,100 - INFO - template folder: ../templates
+2018-05-04 04:50:17,342 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:50:17,342 - INFO - template folder: ../templates
+2018-05-04 04:50:18,869 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:50:18,870 - INFO - template folder: ../templates
+2018-05-04 04:52:26,850 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:52:26,850 - INFO - template folder: ../templates
+2018-05-04 04:52:28,435 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 04:52:28,436 - INFO - template folder: ../templates
+2018-05-04 09:08:48,130 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:08:48,130 - INFO - template folder: ../templates
+2018-05-04 09:08:49,652 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:08:49,653 - INFO - template folder: ../templates
+2018-05-04 09:09:25,142 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:09:25,142 - INFO - template folder: ../templates
+2018-05-04 09:09:28,224 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:09:28,224 - INFO - template folder: ../templates
+2018-05-04 09:10:26,585 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:10:26,585 - INFO - template folder: ../templates
+2018-05-04 09:10:29,219 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:10:29,220 - INFO - template folder: ../templates
+2018-05-04 09:18:04,919 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:18:04,919 - INFO - template folder: ../templates
+2018-05-04 09:18:06,586 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:18:06,586 - INFO - template folder: ../templates
+2018-05-04 09:22:43,821 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:22:43,822 - INFO - template folder: ../templates
+2018-05-04 09:22:45,390 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:22:45,390 - INFO - template folder: ../templates
+2018-05-04 09:24:59,098 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:24:59,098 - INFO - template folder: ../templates
+2018-05-04 09:25:00,636 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:25:00,636 - INFO - template folder: ../templates
+2018-05-04 09:41:52,823 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:41:52,824 - INFO - template folder: ../templates
+2018-05-04 09:41:54,501 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:41:54,502 - INFO - template folder: ../templates
+2018-05-04 09:46:31,814 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:46:31,814 - INFO - template folder: ../templates
+2018-05-04 09:46:33,408 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:46:33,409 - INFO - template folder: ../templates
+2018-05-04 09:47:01,378 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:47:01,379 - INFO - template folder: ../templates
+2018-05-04 09:47:03,034 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:47:03,034 - INFO - template folder: ../templates
+2018-05-04 09:47:55,240 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:47:55,240 - INFO - template folder: ../templates
+2018-05-04 09:47:57,083 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:47:57,084 - INFO - template folder: ../templates
+2018-05-04 09:49:28,068 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:49:28,068 - INFO - template folder: ../templates
+2018-05-04 09:49:29,701 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:49:29,701 - INFO - template folder: ../templates
+2018-05-04 09:52:00,476 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:52:00,836 - INFO - template folder: ../templates
+2018-05-04 09:52:02,376 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:52:02,763 - INFO - template folder: ../templates
+2018-05-04 09:57:11,018 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:57:11,019 - INFO - template folder: ../templates
+2018-05-04 09:57:12,780 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:57:12,780 - INFO - template folder: ../templates
+2018-05-04 09:59:45,632 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:59:45,632 - INFO - template folder: ../templates
+2018-05-04 09:59:47,331 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 09:59:47,331 - INFO - template folder: ../templates
+2018-05-04 10:00:28,458 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:00:28,458 - INFO - template folder: ../templates
+2018-05-04 10:00:30,128 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:00:30,128 - INFO - template folder: ../templates
+2018-05-04 10:01:06,770 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:01:06,770 - INFO - template folder: ../templates
+2018-05-04 10:01:08,569 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:01:08,570 - INFO - template folder: ../templates
+2018-05-04 10:03:09,006 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:03:09,007 - INFO - template folder: ../templates
+2018-05-04 10:03:10,802 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:03:10,803 - INFO - template folder: ../templates
+2018-05-04 10:04:45,969 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:04:45,969 - INFO - template folder: ../templates
+2018-05-04 10:04:47,475 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:04:47,476 - INFO - template folder: ../templates
+2018-05-04 10:06:14,125 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:06:14,125 - INFO - template folder: ../templates
+2018-05-04 10:06:15,658 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:06:15,659 - INFO - template folder: ../templates
+2018-05-04 10:08:34,575 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:08:34,575 - INFO - template folder: ../templates
+2018-05-04 10:08:36,190 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:08:36,190 - INFO - template folder: ../templates
+2018-05-04 10:09:36,019 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:09:36,019 - INFO - template folder: ../templates
+2018-05-04 10:09:37,689 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:09:37,689 - INFO - template folder: ../templates
+2018-05-04 10:11:15,128 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:11:15,129 - INFO - template folder: ../templates
+2018-05-04 10:11:17,144 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:11:17,144 - INFO - template folder: ../templates
+2018-05-04 10:12:33,053 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:12:33,054 - INFO - template folder: ../templates
+2018-05-04 10:12:34,890 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:12:34,890 - INFO - template folder: ../templates
+2018-05-04 10:16:01,628 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:16:01,629 - INFO - template folder: ../templates
+2018-05-04 10:16:03,396 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:16:03,396 - INFO - template folder: ../templates
+2018-05-04 10:20:22,431 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:20:22,431 - INFO - template folder: ../templates
+2018-05-04 10:20:23,941 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:20:23,941 - INFO - template folder: ../templates
+2018-05-04 10:22:01,974 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:22:01,975 - INFO - template folder: ../templates
+2018-05-04 10:22:03,555 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:22:03,555 - INFO - template folder: ../templates
+2018-05-04 10:23:17,827 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:23:17,827 - INFO - template folder: ../templates
+2018-05-04 10:23:19,347 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:23:19,348 - INFO - template folder: ../templates
+2018-05-04 10:25:56,503 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:25:56,503 - INFO - template folder: ../templates
+2018-05-04 10:25:58,160 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:25:58,161 - INFO - template folder: ../templates
+2018-05-04 10:29:24,542 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:29:24,542 - INFO - template folder: ../templates
+2018-05-04 10:29:26,244 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:29:26,245 - INFO - template folder: ../templates
+2018-05-04 10:30:09,919 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:30:09,919 - INFO - template folder: ../templates
+2018-05-04 10:30:11,545 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:30:11,546 - INFO - template folder: ../templates
+2018-05-04 10:30:48,321 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:30:48,322 - INFO - template folder: ../templates
+2018-05-04 10:30:49,966 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:30:49,966 - INFO - template folder: ../templates
+2018-05-04 10:48:21,807 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:48:21,808 - INFO - template folder: ../templates
+2018-05-04 10:48:23,428 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:48:23,428 - INFO - template folder: ../templates
+2018-05-04 10:48:53,721 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:48:53,721 - INFO - template folder: ../templates
+2018-05-04 10:48:55,371 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:48:55,371 - INFO - template folder: ../templates
+2018-05-04 10:49:51,905 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:49:51,905 - INFO - template folder: ../templates
+2018-05-04 10:49:53,660 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:49:53,661 - INFO - template folder: ../templates
+2018-05-04 10:52:45,837 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:52:45,838 - INFO - template folder: ../templates
+2018-05-04 10:52:47,348 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:52:47,348 - INFO - template folder: ../templates
+2018-05-04 10:58:04,559 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:58:04,559 - INFO - template folder: ../templates
+2018-05-04 10:58:06,163 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 10:58:06,163 - INFO - template folder: ../templates
+2018-05-04 11:00:32,055 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 11:00:32,055 - INFO - template folder: ../templates
+2018-05-04 11:00:33,653 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-04 11:00:33,654 - INFO - template folder: ../templates
+2018-05-05 10:31:55,381 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 10:31:55,392 - INFO - template folder: ../templates
+2018-05-05 10:31:57,528 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 10:31:57,529 - INFO - template folder: ../templates
+2018-05-05 10:40:23,519 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 10:40:23,519 - INFO - template folder: ../templates
+2018-05-05 10:40:25,034 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 10:40:25,034 - INFO - template folder: ../templates
+2018-05-05 11:01:39,820 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:01:39,890 - INFO - template folder: ../templates
+2018-05-05 11:01:42,577 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:01:42,945 - INFO - template folder: ../templates
+2018-05-05 11:04:58,948 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:04:58,949 - INFO - template folder: ../templates
+2018-05-05 11:05:00,496 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:05:00,497 - INFO - template folder: ../templates
+2018-05-05 11:14:35,171 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:14:35,172 - INFO - template folder: ../templates
+2018-05-05 11:14:36,743 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:14:36,743 - INFO - template folder: ../templates
+2018-05-05 11:19:37,174 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:19:37,174 - INFO - template folder: ../templates
+2018-05-05 11:19:38,948 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:19:38,949 - INFO - template folder: ../templates
+2018-05-05 11:23:53,700 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:23:53,701 - INFO - template folder: ../templates
+2018-05-05 11:23:55,244 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:23:55,244 - INFO - template folder: ../templates
+2018-05-05 11:27:05,231 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:27:05,231 - INFO - template folder: ../templates
+2018-05-05 11:27:06,893 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:27:06,894 - INFO - template folder: ../templates
+2018-05-05 11:28:59,840 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:28:59,840 - INFO - template folder: ../templates
+2018-05-05 11:29:01,411 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:29:01,411 - INFO - template folder: ../templates
+2018-05-05 11:30:41,949 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:30:41,949 - INFO - template folder: ../templates
+2018-05-05 11:30:43,521 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:30:43,521 - INFO - template folder: ../templates
+2018-05-05 11:32:40,959 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:32:40,960 - INFO - template folder: ../templates
+2018-05-05 11:32:42,495 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:32:42,495 - INFO - template folder: ../templates
+2018-05-05 11:35:01,529 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:01,728 - INFO - template folder: ../templates
+2018-05-05 11:35:03,307 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:03,904 - INFO - template folder: ../templates
+2018-05-05 11:35:13,480 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:13,481 - INFO - template folder: ../templates
+2018-05-05 11:35:15,046 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:15,046 - INFO - template folder: ../templates
+2018-05-05 11:35:33,988 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:33,989 - INFO - template folder: ../templates
+2018-05-05 11:35:35,556 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:35:35,556 - INFO - template folder: ../templates
+2018-05-05 11:42:20,682 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:42:20,682 - INFO - template folder: ../templates
+2018-05-05 11:42:22,239 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:42:22,239 - INFO - template folder: ../templates
+2018-05-05 11:43:09,972 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:43:09,972 - INFO - template folder: ../templates
+2018-05-05 11:43:11,502 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:43:11,502 - INFO - template folder: ../templates
+2018-05-05 11:43:44,481 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:43:44,481 - INFO - template folder: ../templates
+2018-05-05 11:43:45,963 - INFO - static folder: /home/cabox/workspace/src/pubg/../static
+2018-05-05 11:43:45,965 - INFO - template folder: ../templates

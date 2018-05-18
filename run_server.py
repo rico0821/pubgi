@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
-
-from pubg import create_app
+"""
+    run_server
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Module for running Flask server locally. 
+    
+    :copyright: (c) 2018 by rico0821.
+    
+"""
+from pubgi import create_app
 
 
 app = create_app()

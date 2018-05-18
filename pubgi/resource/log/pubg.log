@@ -1,0 +1,108 @@
+2018-05-18 05:41:20,130 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:41:20,131 - INFO - template folder: ../templates
+2018-05-18 05:42:29,839 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:42:29,839 - INFO - template folder: ../templates
+2018-05-18 05:43:18,324 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:43:18,324 - INFO - template folder: ../templates
+2018-05-18 05:43:20,071 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:43:20,071 - INFO - template folder: ../templates
+2018-05-18 05:49:07,393 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:49:07,393 - INFO - template folder: ../templates
+2018-05-18 05:49:09,034 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:49:09,034 - INFO - template folder: ../templates
+2018-05-18 05:52:21,615 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:52:21,616 - INFO - template folder: ../templates
+2018-05-18 05:52:23,226 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:52:23,226 - INFO - template folder: ../templates
+2018-05-18 05:52:33,711 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,063 - INFO - Received API request <Response [404]>: took 0.352126 sec
+2018-05-18 05:52:34,064 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,294 - INFO - Received API request <Response [404]>: took 0.230167 sec
+2018-05-18 05:52:34,295 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,519 - INFO - Received API request <Response [404]>: took 0.223716 sec
+2018-05-18 05:52:34,519 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,667 - INFO - Received API request <Response [404]>: took 0.148123 sec
+2018-05-18 05:52:34,668 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,797 - INFO - Received API request <Response [404]>: took 0.129318 sec
+2018-05-18 05:52:34,798 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,018 - INFO - Received API request <Response [404]>: took 0.220583 sec
+2018-05-18 05:52:35,019 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,162 - INFO - Received API request <Response [404]>: took 0.143124 sec
+2018-05-18 05:52:35,163 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,385 - INFO - Received API request <Response [404]>: took 0.221857 sec
+2018-05-18 05:54:27,574 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:54:27,574 - INFO - template folder: ../templates
+2018-05-18 05:54:29,158 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:54:29,158 - INFO - template folder: ../templates
+2018-05-18 05:54:37,119 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,397 - INFO - Received API request <Response [404]>: took 0.278099 sec
+2018-05-18 05:54:37,398 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,689 - INFO - Received API request <Response [404]>: took 0.290583 sec
+2018-05-18 05:54:37,689 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,908 - INFO - Received API request <Response [404]>: took 0.219169 sec
+2018-05-18 05:54:37,909 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,108 - INFO - Received API request <Response [404]>: took 0.199339 sec
+2018-05-18 05:54:38,109 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,234 - INFO - Received API request <Response [404]>: took 0.125474 sec
+2018-05-18 05:54:38,235 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,363 - INFO - Received API request <Response [404]>: took 0.127509 sec
+2018-05-18 05:54:38,363 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,587 - INFO - Received API request <Response [404]>: took 0.224351 sec
+2018-05-18 05:54:38,588 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,805 - INFO - Received API request <Response [404]>: took 0.217392 sec
+2018-05-18 05:55:11,163 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-18 05:55:11,416 - INFO - Received API request <Response [200]>: took 0.253457 sec
+2018-05-18 05:55:11,417 - INFO - Waiting for API rate limit...
+2018-05-18 05:55:17,423 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-18 05:55:17,634 - INFO - Received API request <Response [200]>: took 0.211446 sec
+2018-05-18 05:55:17,635 - INFO - Waiting for API rate limit...
+2018-05-18 05:55:46,232 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,459 - INFO - Received API request <Response [404]>: took 0.225964 sec
+2018-05-18 05:55:46,459 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,712 - INFO - Received API request <Response [404]>: took 0.253262 sec
+2018-05-18 05:55:46,713 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,905 - INFO - Received API request <Response [404]>: took 0.192165 sec
+2018-05-18 05:55:46,905 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,080 - INFO - Received API request <Response [404]>: took 0.174563 sec
+2018-05-18 05:55:47,081 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,221 - INFO - Received API request <Response [404]>: took 0.139757 sec
+2018-05-18 05:55:47,221 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,351 - INFO - Received API request <Response [404]>: took 0.130244 sec
+2018-05-18 05:55:47,352 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,486 - INFO - Received API request <Response [404]>: took 0.133479 sec
+2018-05-18 05:55:47,486 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,624 - INFO - Received API request <Response [404]>: took 0.138198 sec
+2018-05-18 05:55:55,825 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,015 - INFO - Received API request <Response [404]>: took 0.189531 sec
+2018-05-18 05:55:56,015 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,209 - INFO - Received API request <Response [404]>: took 0.193287 sec
+2018-05-18 05:55:56,209 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,329 - INFO - Received API request <Response [429]>: took 0.119578 sec
+2018-05-18 05:55:56,329 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,514 - INFO - Received API request <Response [429]>: took 0.184413 sec
+2018-05-18 05:55:56,514 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,681 - INFO - Received API request <Response [429]>: took 0.166038 sec
+2018-05-18 05:55:56,681 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,805 - INFO - Received API request <Response [429]>: took 0.123172 sec
+2018-05-18 05:55:56,805 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,921 - INFO - Received API request <Response [429]>: took 0.116319 sec
+2018-05-18 05:55:56,922 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:57,104 - INFO - Received API request <Response [429]>: took 0.181468 sec
+2018-05-18 05:56:02,818 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=ak
+2018-05-18 05:56:03,018 - INFO - Received API request <Response [429]>: took 0.199758 sec
+2018-05-18 05:56:03,019 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=ak
+2018-05-18 05:56:03,213 - INFO - Received API request <Response [429]>: took 0.193759 sec
+2018-05-18 05:56:03,213 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=ak
+2018-05-18 05:56:03,417 - INFO - Received API request <Response [429]>: took 0.203377 sec
+2018-05-18 05:56:03,417 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=ak
+2018-05-18 05:56:03,553 - INFO - Received API request <Response [429]>: took 0.135529 sec
+2018-05-18 05:56:03,553 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=ak
+2018-05-18 05:56:03,708 - INFO - Received API request <Response [429]>: took 0.154394 sec
+2018-05-18 05:56:03,708 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=ak
+2018-05-18 05:56:03,832 - INFO - Received API request <Response [429]>: took 0.123174 sec
+2018-05-18 05:56:03,832 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=ak
+2018-05-18 05:56:03,953 - INFO - Received API request <Response [429]>: took 0.121061 sec
+2018-05-18 05:56:03,954 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=ak
+2018-05-18 05:56:04,140 - INFO - Received API request <Response [429]>: took 0.186027 sec
+2018-05-18 09:19:31,656 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 09:19:31,656 - INFO - template folder: ../templates

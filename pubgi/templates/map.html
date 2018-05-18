@@ -1,0 +1,336 @@
+{% extends "layout.html" %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+<div class="row mt-5">
+    <div class="col-md-3">
+        <!-- map menu -->
+        <div id="map-menu" class="card">
+            <div class="card-header text-white primary-color">
+                메뉴
+            </div>
+            <div class="card-body">
+                <form>
+                    <label for="map-option">맵</label>
+                    <select class="form-control" id="map-option">
+                      <option value="erangel">에란겔</option>
+                      <option value="miramar">미라마</option>
+                    </select>
+                    <div class="form-check mt-4">
+                        <input type="checkbox" class="form-check-input" id="kills-marker">
+                        <label class="form-check-label" for="kills-marker">킬</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="items-marker">
+                        <label class="form-check-label" for="kills-marker">아이템 획득</label>
+                    </div>
+                </form>
+                <img src="{{ url_for('static',filename='img/loading.gif') }}" class="loading" style="display:none;"></img>
+            </div>
+        </div>
+        <!-- end of map menu -->
+    </div>
+    <div class="row col-md-9">
+        <!-- map canvas -->
+        <canvas id="pubg-map" class="map_overall mx-auto"></canvas>
+        <!-- end of map canvas -->
+    </div>
+</div>
+<script type="text/javascript">
+    
+    var canvas = document.getElementById('pubg-map');
+    var map_name = 'erangel';
+    var xy_kills, xy_items;
+	canvas.width = 720;
+    canvas.height = 720;
+    
+    $(document).ready(function() {
+        
+        var ctx = canvas.getContext('2d');
+        var z_level = 0;
+        trackTransforms(ctx);
+        var map_img = new Image();
+        
+        map_img.src = "{{ url_for('static', filename='img/map/erangel.jpg') }}";
+        
+        var Marker = function() {
+            this.type = '';
+            this.sprite = new Image();
+            this.sprite.src = "{{ url_for('static', filename='img/kill_marker.png') }}";
+            this.width = 16;
+            this.height = 16;
+            this.x = 0;
+            this.y = 0;
+        }
+
+        var Markers = new Array();
+        
+        function redraw() {
+
+            var p1 = ctx.transformedPoint(0, 0);
+            var p2 = ctx.transformedPoint(canvas.width, canvas.height);
+
+            ctx.clearRect(p1.x, p1.y, p2.x - p1.x, p2.y - p1.y);
+
+            ctx.save();
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.restore();
+
+            ctx.drawImage(map_img, 0, 0, map_img.width, map_img.height,
+                                             0, 0, canvas.width, canvas.height); 
+            
+            for (marker of Markers) {
+                ctx.drawImage(marker.sprite, marker.x, marker.y, marker.width, marker.height);
+            }
+        }
+        redraw();
+        
+        function remove_markers(type) {
+            for (var i = Markers.length - 1; i >= 0; --i) {
+                if (Markers[i].type == type) {
+                    Markers.splice(i , 1);
+                }
+            }
+            redraw();
+        }
+        
+        function place_markers(type) {
+            
+            var resc_x = canvas.width / 816001;
+            var resc_y = canvas.height / 816001;
+            if (type=='kills') {
+                var xy = xy_kills;
+            } else if (type=='items') {
+                var xy= xy_items;
+            }
+            for (coord of xy) {
+                var x = coord['x'] * resc_x;
+                var y = coord['y'] * resc_y;
+                marker = new Marker();
+                marker.type = type;
+                if (type=='kills') {
+                    marker.sprite.src = "{{ url_for('static', filename='img/kill_marker.png') }}";
+                } else if (type == 'items') {
+                    marker.sprite.src = "{{ url_for('static', filename='img/item_marker.png') }}";
+                }
+                marker.x = x - marker.width/2;
+                marker.y = y - marker.height/2;
+                Markers.push(marker);
+            }
+            redraw();
+        }
+        
+        $('select').on('change', function() {
+            map_name = this.value;
+            if (map_name == 'erangel') {
+                map_img.src = "{{ url_for('static', filename='img/map/erangel.jpg') }}";
+                $('.form-check-input').prop('checked', false);
+            }
+            else if (map_name == 'miramar') {
+                map_img.src = "{{ url_for('static', filename='img/map/miramar.jpg') }}";
+                $('.form-check-input').prop('checked', false);
+            }
+            remove_markers('kills');
+            remove_markers('items');
+            redraw(); 
+        });
+        
+        function get_data(map_name, type) {
+            $.ajax({
+                url         : '/map/kills'
+               ,type        : 'POST'
+               ,cache       : false
+               ,contentType : 'application/json; charset=utf-8'
+               ,dataType : 'json'
+               ,data : JSON.stringify({
+                            map_name : map_name
+                           ,data_type : type
+                        })
+               ,success : function(data) {
+                   if (data.xy_data) {
+                       if (type == 'kills') {
+                           xy_kills = data.xy_data;
+                       } else if (type == 'items') {
+                           xy_items = data.xy_data;
+                       }
+                       $(".loading").hide();
+                       place_markers(type);
+                   } else {
+                       bootbox.alert("데이터 불러오기에 실패하였습니다. 잠시 후 다시 시도해주세요.", function() {
+                           $(location).attr('href',"{{ url_for('pubg.show_map') }}");
+                       });
+                   }
+                 }
+               ,error: function(result) {
+                       bootbox.alert("서버에 문제가 발생했습니다. 잠시 후 다시 시도해주세요.", function() {
+                           $(location).attr('href',"{{ url_for('pubg.show_map') }}");
+                       });
+                 }
+            });
+        }
+        
+        $("#kills-marker").change(function() {
+            
+            if ($("#kills-marker").is(":checked")) {
+                $(".loading").show();
+                get_data(map_name, 'kills');
+            } else {
+                remove_markers('kills');
+            }
+        });
+        
+        $("#items-marker").change(function() {
+            
+            if ($("#items-marker").is(":checked")) {
+                $(".loading").show();
+                get_data(map_name, 'items');
+            } else {
+                remove_markers('items');
+            }
+        });
+
+        var lastX = canvas.width/2, lastY = canvas.height/2;
+
+        var dragStart, dragged;
+        var scaleFactor = 1.1;
+
+        canvas.addEventListener('mousedown', function(evt) {
+            document.body.style.mozUserSelect = document.body.style.webkitUserSelect = document.body.style.userSelect = 'none';
+            lastX = evt.offsetX || (evt.pageX - canvas.offsetLeft);
+            lastY = evt.offsetY || (evt.pageY - canvas.offsetTop);
+            dragStart = ctx.transformedPoint(lastX, lastY);
+            dragged = false;
+        }, false);
+        
+        canvas.addEventListener('mouseout', function(evt) {
+            dragged = false;
+            dragStart = false;
+        }, false);
+        
+        canvas.addEventListener('mousemove', function(evt) {
+            lastX = evt.offsetX || (evt.pageX - canvas.offsetLeft);
+            lastY = evt.offsetY || (evt.pageY - canvas.offsetTop);
+            dragged = true;
+            
+            if (dragStart) {
+                var pt = ctx.transformedPoint(lastX, lastY);
+                var scale = 1 / Math.pow(scaleFactor, z_level);
+                var ends = {
+                    l : pt.x - (evt.offsetX * scale),
+                    r : pt.x + ((canvas.width - evt.offsetX) * scale),
+                    t : pt.y - (evt.offsetY * scale),
+                    b : pt.y + ((canvas.height - evt.offsetY) * scale)
+                };
+                var dx = pt.x - dragStart.x;
+                var dy = pt.y - dragStart.y;
+                if (ends.l-dx < 0) {
+                    dx = ends.l;
+                }
+                else if (ends.r-dx > canvas.width) {
+                    dx = ends.r - canvas.width;
+                }
+                if (ends.t-dy < 0) {
+                    dy = ends.t;
+                }
+                else if (ends.b-dy > canvas.height) {
+                    dy = ends.b - canvas.height;
+                }
+                ctx.translate(dx, dy);
+                redraw();
+            }
+        }, false);
+
+        canvas.addEventListener('mouseup',function(evt) {
+            dragStart = null;
+        }, false);
+
+        var maxZoom = 18;
+        
+        var zoom = function(evt) {
+            var pt = ctx.transformedPoint(lastX, lastY);
+            ctx.translate(pt.x, pt.y);
+            var factor = Math.pow(scaleFactor, evt.wheelDelta/Math.abs(evt.wheelDelta));
+            if (!(factor<1 && z_level==0) && !(factor>1 && z_level==maxZoom)) {
+                ctx.scale(factor, factor);
+                if (factor > 1) {
+                    z_level += 1;
+                } else {z_level -= 1;}
+            } 
+            ctx.translate(-pt.x, -pt.y);
+            redraw();
+        }
+
+        var handleScroll = function(evt) {
+            var delta = evt.wheelDelta ? evt.wheelDelta/40 : evt.detail ? -evt.detail : 0;
+            if (delta) {zoom(evt);}
+            return evt.preventDefault() && false;
+        };
+    
+        canvas.addEventListener('DOMMouseScroll', handleScroll, false);
+        canvas.addEventListener('mousewheel', handleScroll, false);
+    });
+	
+	function trackTransforms(ctx) {
+        
+        var svg = document.createElementNS("http://www.w3.org/2000/svg",'svg');
+        var xform = svg.createSVGMatrix();
+        ctx.getTransform = function() {return xform;};
+
+        var savedTransforms = [];
+        var save = ctx.save;
+        ctx.save = function() {
+            savedTransforms.push(xform.translate(0,0));
+            return save.call(ctx);
+        };
+    
+        var restore = ctx.restore;
+        ctx.restore = function() {
+            xform = savedTransforms.pop();
+            return restore.call(ctx);
+		};
+
+        var scale = ctx.scale;
+        ctx.scale = function(sx,sy) {
+            xform = xform.scaleNonUniform(sx,sy);
+            return scale.call(ctx,sx,sy);
+		};
+    
+        var rotate = ctx.rotate;
+        ctx.rotate = function(radians) {
+            xform = xform.rotate(radians*180/Math.PI);
+            return rotate.call(ctx,radians);
+        };
+    
+        var translate = ctx.translate;
+        ctx.translate = function(dx, dy) {
+            xform = xform.translate(dx, dy);
+            return translate.call(ctx, dx, dy);
+        };
+    
+        var transform = ctx.transform;
+        ctx.transform = function(a,b,c,d,e,f) {
+            var m2 = svg.createSVGMatrix();
+            m2.a=a; m2.b=b; m2.c=c; m2.d=d; m2.e=e; m2.f=f;
+            xform = xform.multiply(m2);
+            return transform.call(ctx,a,b,c,d,e,f);
+        };
+    
+        var setTransform = ctx.setTransform;
+        ctx.setTransform = function(a,b,c,d,e,f){
+            xform.a = a;
+            xform.b = b;
+            xform.c = c;
+            xform.d = d;
+            xform.e = e;
+            xform.f = f;
+            return setTransform.call(ctx,a,b,c,d,e,f);
+        };
+    
+        var pt  = svg.createSVGPoint();
+        ctx.transformedPoint = function(x, y) {
+            pt.x=x; pt.y=y;
+            return pt.matrixTransform(xform.inverse());
+        }
+    }
+</script>
+{% endblock %}

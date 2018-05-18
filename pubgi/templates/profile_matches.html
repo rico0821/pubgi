@@ -1,0 +1,198 @@
+{% extends "profile_layout.html" %}
+{% block title %}{{ player.name }}님의 경기 기록{% endblock %}
+{% block main_content %}
+<meta id="pill-label" data-name="link-matches">
+<!-- matches -->
+<div id="match-history" class="row mt-5">
+    <div class="col-md-12 mx-0 px-0">
+        <div id="matches" class="card">
+            <div class="card-header text-white bg-dark">
+                경기 기록
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% if not matches %}
+                    <li class="list-group itemm mt-5">
+                        <h3 class="text-muted">
+                            경기 기록이 없습니다!
+                        </h3>
+                    </li>
+                    {% endif %}
+                    {% for record in matches|list %}
+                    <li class="list-group-item mt-1">
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 ml-2">
+                                    <h4 class="my-auto">
+                                        {{ record.roster.match.info.gameMode | translate_mode }}
+                                        {% if record.stats.place == 1 %}
+                                        <span id="badge-chicken" class="badge badge-sm yellow darken-1" data-toggle="tooltip" data-placement="top" title="치킨">
+                                            <i class="fas fa-utensils"></i>
+                                        </span>
+                                        {% elif 10 >= record.stats.place %}
+                                        <span id="badge-top10" class="badge badge-sm grey lighten-1" data-toggle="tooltip" data-placement="top" title="탑10">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </span>
+                                        {% endif %}
+                                    </h4>
+                                    <small class="text-muted"><script>document.write(moment({{ record.roster.match.info.createdAt | datetimeformat | tojson }}).format('YYYY-MM-DD HH:mm'))</script></small>
+                                </div>
+                                <div class="col-md-2 px-0">
+                                    <h4 class="text-muted my-auto">#{{ record.stats.place }}등</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="btn-group my-auto" role="group" aria-label="match-grade">
+                                        <button id="battle-grade" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="전투">
+                                            {{ (record.stats | grade)['battle'] }}
+                                        </button>
+                                        <button id="survive-grade" type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="생존">
+                                            {{ (record.stats | grade)['survive'] }}
+                                        </button>
+                                        <button id="mobility-grade" type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="기동">
+                                            {{ (record.stats | grade)['mobility'] }}
+                                        </button>
+                                        <button id="support-grade" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="지원">
+                                            {{ (record.stats | grade)['support'] }}
+                                        </button>
+                                        <button id="supply-grade" type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="보급">
+                                            {{ (record.stats | grade)['supply'] }}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- collapse -->
+                    <a class="text-center text-white w-100 bg-secondary" data-toggle="collapse" href="#matchDetail{{ loop.index }}" aria-expanded="false" aria-controls="matchDetail{{ loop.index }}">
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <!-- collapsible element -->
+                    <div class="collapse" id="matchDetail{{ loop.index }}">
+                        <!-- overview stats table -->
+                        <table id="overviewStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">모드</th>
+                                    <th scope="col">맵</th>
+                                    <th scope="col">순위</th>
+                                    <th scope="col">생존 시간</th>
+                                    <th scope="col">승 레이팅 변동</th>
+                                    <th scope="col">킬 레이팅 변동</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.roster.match.info.gameMode | translate_mode }}</td>
+                                    <td>{{ record.roster.match.info.mapName | translate_map }}</td>
+                                    <td>#{{ record.stats.place }}</td>
+                                    <td>{{ (record.stats.timeSurvived / 60) | int}} 분 {{ (record.stats.timeSurvived % 60) | int }}초</td>
+                                    {% if record.stats.winPointDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.winPointDelta | int }}</td>
+                                    {% else %}
+                                    <td class="red-text">{{ record.stats.winPointDelta | int }}</td>
+                                    {% endif %}
+                                    {% if record.stats.killPointDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.killPointDelta | int }}</td>
+                                    {% else %}
+                                    <td class="red-text">{{ record.stats.killPointDelta | int }}</td>
+                                    {% endif %}
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of overviews table -->
+                        <!-- battle stats table -->
+                        <table id="battleStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">킬</th>
+                                    <th scope="col">어시스트</th>
+                                    <th scope="col">DBNO</th>
+                                    <th scope="col">데미지</th>
+                                    <th scope="col">헤드킬</th>
+                                    <th scope="col">로드킬</th>
+                                    <th scope="col">최장거리 킬</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.stats.kill }}</td>
+                                    <td>{{ record.stats.assist }}</td>
+                                    <td>{{ record.stats.dbno }}</td>
+                                    <td>{{ record.stats.damage | round }}</td>
+                                    <td>{{ record.stats.headshot }}</td>
+                                    <td>{{ record.stats.roadKill }}</td>
+                                    <td>{{ record.stats.longestKill }} m</td>
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of battle stats table -->
+                        <!-- al stats table -->
+                        <table id="alStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">차량 파괴</th>
+                                    <th scope="col">걸은 거리</th>
+                                    <th scope="col">차량 이동 거리</th>
+                                    <th scope="col">부스트</th>
+                                    <th scope="col">힐</th>
+                                    <th scope="col">무기 획득</th>
+                                    <th scope="col">부활</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.stats.vehicleDestroyed }} 대</td>
+                                    <td>{{ (record.stats.walkDistance / 1000) | round(2) }} km</td>
+                                    <td>{{ (record.stats.rideDistance / 1000) | round(2) }} km</td>
+                                    <td>{{ record.stats.boost }}</td>
+                                    <td>{{ record.stats.heal }}</td>
+                                    <td>{{ record.stats.weapons }} 개</td>
+                                    <td>{{ record.stats.revive }}</td>
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of al stats table -->
+                    </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of matches -->
+{% if matches %}
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    });
+</script>
+{% endif %}
+{% if pagination %}
+<div class="col-md-12 mt-3">
+    {% from "_pagehelpers.html" import render_pagination %}
+    {{ render_pagination(pagination, player) }}
+</div>
+{% else %}
+<!-- do nothing! -->
+{% endif %}
+{% endblock %}

@@ -1,0 +1,593 @@
+{% extends "profile_layout.html" %}
+{% block title %}{{ player.name }}님의 전적{% endblock %}
+{% block main_content %}
+<meta id="pill-label" data-name="link-overview">
+<!-- player stats -->
+<div id="player-stats" class="row mt-3">
+    <div id="col-solo" class="col-md-4 pl-0">
+        <div id="stats-solo" class="card">
+            <div class="card-header text-white danger-color">
+                <i class="fas fa-user fa-sm"></i> 솔로
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- rank icon -->
+                            <div class="col-md-3 m-0 p-0">
+                                <i class="fas fa-certificate m-auto"></i> 
+                            </div>
+                            <!-- rating -->
+                            <div class="col-md-9 m-0 p-0">
+                                <h4>{{ player.solo[-1].rating | int }}</h4><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- win rating -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>승 레이팅</small><p class="p-stats">{{ player.solo[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- kill rating -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.solo[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% if player.solo[-1].game %}
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- K/D -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.solo[-1].kill / player.solo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average time survived -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>생존</small><p class="p-stats">{{ (player.solo[-1].timeSurvived / player.solo[-1].game / 60) | int }}분 {{ ((player.solo[-1].timeSurvived / player.solo[-1].game) % 60) | int }}초</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- top10 % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>Top 10</small><p class="p-stats">{{ (player.solo[-1].top10 / player.solo[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- win % -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>승률:</small><p class="p-stats">{{ (player.solo[-1].win / player.solo[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- headshot % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>헤드샷</small><p class="p-stats">{{ (player.solo[-1].headshot / player.solo[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average kill distance -->
+                            <!-- average damage -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>데미지</small><p class="p-stats">{{ (player.solo[-1].damage / player.solo[-1].game) | int }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="col-duo" class="col-md-4 px-auto">
+        <div id="stats-duo" class="card">
+            <div class="card-header text-white warning-color-dark">
+                <i class="fas fa-user fa-sm"></i><i class="fas fa-user fa-sm"></i> 듀오
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- rank icon -->
+                            <div class="col-md-3 m-0 p-0">
+                                <i class="fas fa-certificate m-auto"></i> 
+                            </div>
+                            <!-- rating -->
+                            <div class="col-md-9 m-0 p-0">
+                                <h4>{{ player.duo[-1].rating | int }}</h4><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- win rating -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>승 레이팅</small><p class="p-stats">{{ player.duo[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- kill rating -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.duo[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% if player.duo[-1].game %}
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- K/D -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.duo[-1].kill / player.duo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average time survived -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>생존</small><p class="p-stats">{{ (player.duo[-1].timeSurvived / player.duo[-1].game / 60) | int }}분 {{ ((player.duo[-1].timeSurvived / player.duo[-1].game) % 60) | int }}초</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- top10 % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>Top 10</small><p class="p-stats">{{ (player.duo[-1].top10 / player.duo[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- win % -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>승률:</small><p class="p-stats">{{ (player.duo[-1].win / player.duo[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- headshot % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>헤드샷</small><p class="p-stats">{{ (player.duo[-1].headshot / player.duo[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average kill distance -->
+                            <!-- average damage -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>데미지</small><p class="p-stats">{{ (player.duo[-1].damage / player.duo[-1].game) | int }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="col-squad" class="col-md-4 pr-0">
+        <div id="stats-squad" class="card">
+            <div class="card-header text-white info-color">
+                <i class="fas fa-user fa-sm"></i><i class="fas fa-user fa-sm"></i><i class="fas fa-user fa-sm"></i><i class="fas fa-user fa-sm"></i> 스쿼드 
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- rank icon -->
+                            <div class="col-md-3 m-0 p-0">
+                                <i class="fas fa-certificate m-auto"></i> 
+                            </div>
+                            <!-- rating -->
+                            <div class="col-md-9 m-0 p-0">
+                                <h4>{{ player.squad[-1].rating | int }}</h4><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- win rating -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>승 레이팅</small><p class="p-stats">{{ player.squad[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- kill rating -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.squad[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% if player.squad[-1].game %}
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- K/D -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.squad[-1].kill / player.squad[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average time survived -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>생존</small><p class="p-stats">{{ (player.squad[-1].timeSurvived / player.squad[-1].game / 60) | int }}분 {{ ((player.squad[-1].timeSurvived / player.squad[-1].game) % 60) | int }}초</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- top10 % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>Top 10</small><p class="p-stats">{{ (player.squad[-1].top10 / player.squad[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- win % -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>승률:</small><p class="p-stats">{{ (player.squad[-1].win / player.squad[-1].game * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <!-- headshot % -->
+                            <div class="col-md-6 m-0 pl-0">
+                                <small>헤드샷</small><p class="p-stats">{{ (player.squad[-1].headshot / player.squad[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                            <!-- average kill distance -->
+                            <!-- average damage -->
+                            <div class="col-md-6 m-0 pr-0">
+                                <small>데미지</small><p class="p-stats">{{ (player.squad[-1].damage / player.squad[-1].game) | int }}</p><small class="small-top-percentile">상위 %</small>
+                            </div>
+                        </div>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of player stats -->
+<!-- widgets -->
+<div id="profile-content" class="row mt-5">
+    <div id="widgets" class="col-md-4 p-0">
+        <!-- summary widget -->
+        <div id="analysis-summary" class="card">
+            <div class="card-header text-white bg-dark">
+                요약 분석 
+            </div>
+            <div class="card-body">
+                <canvas id="radarChart" height="300"></canvas>
+            </div>
+        </div>
+        <!-- end of summary widget -->
+        <!-- trend widget-->
+        <div id="rating-trend" class="card mt-3">
+            <div class="card-header text-white bg-dark">
+                레이팅 트렌드 
+            </div>
+            <div class="card-body">
+                <canvas id="trendChart" height="300"></canvas>
+            </div>
+        </div>
+        <!-- end of trend widget -->
+    </div>
+    <!-- end of widgets -->
+    <!-- matches -->
+    <div id="match-history" class="col-md-8 pr-0">
+        <div id="matches" class="card">
+            <div class="card-header text-white bg-dark">
+                경기 기록
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% if not player.records %}
+                    <li class="list-group itemm mt-5">
+                        <h3 class="text-muted">
+                            경기 기록이 없습니다!
+                        </h3>
+                    </li>
+                    {% endif %}
+                    {% for record in (player.records|reverse|list)[:10] %}
+                    <li class="list-group-item mt-1">
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-3 ml-2">
+                                    <h4 class="my-auto">
+                                        {{ record.roster.match.info.gameMode | translate_mode }}
+                                        {% if record.stats.place == 1 %}
+                                        <span id="badge-chicken" class="badge badge-sm yellow darken-1" data-toggle="tooltip" data-placement="top" title="치킨">
+                                            <i class="fas fa-utensils"></i>
+                                        </span>
+                                        {% elif 10 >= record.stats.place %}
+                                        <span id="badge-top10" class="badge badge-sm grey lighten-1" data-toggle="tooltip" data-placement="top" title="탑10">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </span>
+                                        {% endif %}
+                                    </h4>
+                                    <small class="text-muted">{{ record.roster.match.info.createdAt | datetimeformat | timesince }}</small>
+                                </div>
+                                <div class="col-md-2 px-0">
+                                    <h4 class="text-muted my-auto">#{{ record.stats.place }}등</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="btn-group my-auto" role="group" aria-label="match-grade">
+                                        <button id="battle-grade" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="전투">
+                                            {{ (record.stats | grade)['battle'] }}
+                                        </button>
+                                        <button id="survive-grade" type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="생존">
+                                            {{ (record.stats | grade)['survive'] }}
+                                        </button>
+                                        <button id="mobility-grade" type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="기동">
+                                            {{ (record.stats | grade)['mobility'] }}
+                                        </button>
+                                        <button id="support-grade" type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="지원">
+                                            {{ (record.stats | grade)['support'] }}
+                                        </button>
+                                        <button id="supply-grade" type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="보급">
+                                            {{ (record.stats | grade)['supply'] }}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- collapse -->
+                    <a class="text-center text-white w-100 bg-secondary" data-toggle="collapse" href="#matchDetail{{ loop.index }}" aria-expanded="false" aria-controls="matchDetail{{ loop.index }}">
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <!-- collapsible element -->
+                    <div class="collapse" id="matchDetail{{ loop.index }}">
+                        <!-- overview stats table -->
+                        <table id="overviewStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">모드</th>
+                                    <th scope="col">맵</th>
+                                    <th scope="col">순위</th>
+                                    <th scope="col">생존 시간</th>
+                                    <th scope="col">승 레이팅 변동</th>
+                                    <th scope="col">킬 레이팅 변동</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.roster.match.info.gameMode | translate_mode }}</td>
+                                    <td>{{ record.roster.match.info.mapName | translate_map }}</td>
+                                    <td>#{{ record.stats.place }}</td>
+                                    <td>{{ (record.stats.timeSurvived / 60) | int}} 분 {{ (record.stats.timeSurvived % 60) | int }}초</td>
+                                    {% if record.stats.winPointDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.winPointDelta | int }}</td>
+                                    {% else %}
+                                    <td class="red-text">{{ record.stats.winPointDelta | int }}</td>
+                                    {% endif %}
+                                    {% if record.stats.killPointDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.killPointDelta | int }}</td>
+                                    {% else %}
+                                    <td class="red-text">{{ record.stats.killPointDelta | int }}</td>
+                                    {% endif %}
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of overviews table -->
+                        <!-- battle stats table -->
+                        <table id="battleStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">킬</th>
+                                    <th scope="col">어시스트</th>
+                                    <th scope="col">DBNO</th>
+                                    <th scope="col">데미지</th>
+                                    <th scope="col">헤드킬</th>
+                                    <th scope="col">로드킬</th>
+                                    <th scope="col">최장거리 킬</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.stats.kill }}</td>
+                                    <td>{{ record.stats.assist }}</td>
+                                    <td>{{ record.stats.dbno }}</td>
+                                    <td>{{ record.stats.damage | round }}</td>
+                                    <td>{{ record.stats.headshot }}</td>
+                                    <td>{{ record.stats.roadKill }}</td>
+                                    <td>{{ record.stats.longestKill }} m</td>
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of battle stats table -->
+                        <!-- al stats table -->
+                        <table id="alStats" class="table table-hover mx-auto my-0">
+                            <!-- stats headers -->
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">차량 파괴</th>
+                                    <th scope="col">걸은 거리</th>
+                                    <th scope="col">차량 이동 거리</th>
+                                    <th scope="col">부스트</th>
+                                    <th scope="col">힐</th>
+                                    <th scope="col">무기 획득</th>
+                                    <th scope="col">부활</th>
+                                </tr>
+                            </thead>
+                            <!-- end of stats headers -->
+                            <!-- table body -->
+                            <tbody>
+                                <!-- player data -->
+                                <tr>
+                                    <td>{{ record.stats.vehicleDestroyed }} 대</td>
+                                    <td>{{ (record.stats.walkDistance / 1000) | round(2) }} km</td>
+                                    <td>{{ (record.stats.rideDistance / 1000) | round(2) }} km</td>
+                                    <td>{{ record.stats.boost }}</td>
+                                    <td>{{ record.stats.heal }}</td>
+                                    <td>{{ record.stats.weapon }} 개</td>
+                                    <td>{{ record.stats.revive }}</td>
+                                </tr>
+                                <!-- end of player data -->
+                            </tbody>
+                            <!-- end of table body -->
+                        </table>
+                        <!-- end of al stats table -->
+                    </div>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% if (player.records | length) > 10 %}
+            <a class="text-center text-white bg-dark w-100 p-2" href="{{ url_for('pubgi.show_match_history', player_name=player.name, region=player.region) }}">
+                경기 정보 더보기
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- end of matches -->
+{% if player.records %}
+<script type="text/javascript">
+    $(document).ready(function() {
+        
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        
+        var ctxR = document.getElementById("radarChart").getContext('2d');
+        var ctxT = document.getElementById("trendChart").getContext('2d');
+        
+        var battle = "{{ (player.solo[-1] | grade)['battle'] | safe }}";
+        var survive = "{{ (player.solo[-1] | grade)['survive'] | safe }}";
+        var mobility = "{{ (player.solo[-1] | grade)['mobility'] | safe }}";
+        var support = "{{ (player.solo[-1] | grade)['support'] | safe }}";
+        var supply = "{{ (player.solo[-1] | grade)['supply'] | safe }}";
+        // Need to process these data
+
+        var radarData = [battle, survive, mobility, support, supply]
+        var radarLabels = {
+            'ko-kr' : ["전투", "생존", "기동", "지원", "보급"]
+        } // Add more languages
+        
+        radarData.forEach(function (grade, i) {
+            
+            radarLabels['ko-kr'][i] = radarLabels['ko-kr'][i] + ' ' + grade;
+            if (grade=='S') {
+                radarData[i] = 120;
+            }
+            else if (grade=='A') {
+                radarData[i] = 100;
+            }
+            else if (grade=='B') {
+                radarData[i] = 80;
+            }
+            else if (grade=='C') {
+                radarData[i] = 60;
+            }
+            else if (grade=='D') {
+                radarData[i] = 40;
+            }
+            else if (grade=='E') {
+                radarData[i] = 20;
+            }
+            else {
+                radarData[i] = 10;
+            }
+        }); // please improve this shit...
+        
+        var myRadarChart = new Chart(ctxR, {
+            type: "radar",
+            data: {
+                labels: radarLabels['ko-kr'], // take language as key
+                datasets: [{
+                    data: radarData,
+                    backgroundColor: "rgba(54,162,235,0.2)",
+                    borderColor: "rgb(54,162,235)",
+                    pointBackgroundColor: "rgb(54,162,235)",
+                    pointBorderColor: "#fff",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgb(54,162,235)"
+                }]
+            },
+            options: {
+                elements: {
+                    line: {
+                        tension: 0,
+                        borderWidth: 3
+                    }
+                },
+                scale: {
+                    label: {
+                        display: false
+                    },
+                    pointLabels: {
+                        fontSize: 20
+                    },
+                    ticks: {
+                        display: false,
+                        beginAtZero: true,
+                        stepSize: 20,
+                        min: 0,
+                        max: 120
+                    }
+                },
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    display: false
+                },
+                responsive: true
+            }   
+        });
+        /*--
+        var now = new Date();
+        now.setDate(now.getDate() - 7);
+        function d_format(datetime) {
+            var month = datetime.getMonth()
+            var day = datetime.getDate();
+            var datestring = month + "월 " + day + "일"; 
+            return datestring;
+        }
+        var trend_labels = [];
+        for (var i = 0; i < 7; i += 1) {
+            now.setDate(now.getDate() + i);
+            trend_labels.push(d_format(now));
+        }
+        var solo_data = [1200, 1040, 1040, 1040, 1330, 2000, 1530];
+        var duo_data = [1100, 1000, 1200, 1000, 1000, 1000, 1000];
+        var squad_data = [1000, 1000, 1000, 1000, 1000, 1300, 1000];
+
+        var myTrendChart = new Chart(ctxT, {
+            type: 'line',
+            data: {
+                labels: trend_labels,
+                datasets: [
+                    {
+                        label: "솔로",
+                        backgroundColor: "rgba(255, 255, 255,0)",
+                        borderColor: "rgba(0, 153, 255,1)",
+                        pointBackgroundColor: "rgba(0, 153, 255,1)",
+                        pointBorderColor: "#fff",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "rgba(0, 153, 255,1)",
+                        data: solo_data
+                    },
+                    {
+                        label: "듀오",
+                        backgroundColor: "rgba(255, 255, 255,0)",
+                        borderColor: "rgba(255, 102, 102,1)",
+                        pointBackgroundColor: "rgba(255, 102, 102,1)",
+                        pointBorderColor: "#fff",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "rgba(255, 102, 102,1)",
+                        data: duo_data
+                    },
+                    {
+                        label: "스쿼드",
+                        backgroundColor: "rgba(255, 255, 255,0)",
+                        borderColor: "rgba(255, 153, 0,1)",
+                        pointBackgroundColor: "rgba(255, 153, 0,1)",
+                        pointBorderColor: "#fff",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "rgba(255, 153, 0,1)",
+                        data: squad_data
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+            }    
+        }); 
+        --*/
+});    
+</script>
+{% endif %}
+{% endblock %}
