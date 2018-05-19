@@ -57,7 +57,7 @@ def update(player_id):
     if not player:
         abort(404)
     
-    diff = datetime.utcnow() - player.update_time
+    diff = datetime.utcnow() - player.updateTime
     
     if diff.seconds < current_app.config['UPDATE_WAIT_TIME']:
         return redirect(url_for('.show_profile', player_name=player.name, region=player.region))
@@ -86,19 +86,19 @@ def update(player_id):
     last_match_id = None
     
     if player.records:
-        last_match_id = player.records[-1].pubg_match_id
+        last_match_id = player.records[-1].pubgMatchID
     player_stats = getPlayerStats(player.region, player.name, api_key, last_match_id)
     # player_stats = (match_id, match_stats, match_info, roster_data, telemetry_url)
     for data in player_stats:
         
         pubg_match_id = data[0]
 
-        record_exist = dao.query(Record).filter_by(player_id=player.id).\
-                        filter_by(pubg_match_id=pubg_match_id).first()
+        record_exist = dao.query(Record).filter_by(playerID=player.id).\
+                        filter_by(pubgMatchID=pubg_match_id).first()
         
         try:
             if not record_exist:
-                    match_exist = dao.query(Match).filter_by(pubg_id=pubg_match_id).first()
+                    match_exist = dao.query(Match).filter_by(pubgID=pubg_match_id).first()
 
                     if not match_exist:
                         match_exist = Match(pubg_match_id)
@@ -108,15 +108,15 @@ def update(player_id):
                         match_exist.info = match_info
                         
                         telemetry_data = getTelemetry(data[4])
-                        tele_exist = mongo.db.matches.find_one({'match_id' : pubg_match_id})
+                        tele_exist = mongo.db.matches.find_one({'matchID' : pubg_match_id})
 
                         if not tele_exist:
-                            mongo.db.matches.insert({'match_id' : pubg_match_id, 
+                            mongo.db.matches.insert({'matchID' : pubg_match_id, 
                                                               'map' : match_info.mapName,
                                                               'data' : telemetry_data})
                             Log.info('Telemetry data added for match %r' % match_exist)
                         
-                    roster = dao.query(Roster).filter_by(pubg_roster_id=data[3]).first()
+                    roster = dao.query(Roster).filter_by(pubgRosterID=data[3]).first()
 
                     if not roster:
                         roster = Roster(data[3])
@@ -156,7 +156,7 @@ def update(player_id):
             Log.error(str(e))
             return jsonify(result=False)
     
-    player.update_time = datetime.utcnow()
+    player.updateTime = datetime.utcnow()
     dao.commit()
 
     return jsonify(result=True)

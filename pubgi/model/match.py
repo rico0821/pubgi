@@ -23,7 +23,7 @@ class Match(Base):
     __tablename__ = 'matches'
     
     id = Column(Integer, primary_key=True)
-    pubg_id = Column(String(50), nullable=False)
+    pubgID = Column(String(50), nullable=False)
     
     retrievedAt = Column(DateTime, default=datetime.utcnow())
     
@@ -35,12 +35,12 @@ class Match(Base):
                              cascade='delete',
                              backref='match')
     
-    def __init__(self, pubg_id):
+    def __init__(self, pubgID):
         
-        self.pubg_id = pubg_id
+        self.pubgID = pubgID
         
     def __repr__(self):
-        return '<Match %r>' % (self.pubg_id)
+        return '<Match %r>' % (self.pubgID)
 
 
 class MatchInfo(Base):
@@ -48,7 +48,7 @@ class MatchInfo(Base):
     __tablename__ = 'match_info'
     
     id = Column(Integer, primary_key=True)
-    match_id = Column(Integer, ForeignKey(Match.id), unique=True)
+    matchID = Column(Integer, ForeignKey(Match.id), unique=True)
     
     createdAt = Column(String(50), nullable=False)
     gameMode = Column(String(30), nullable=False)
@@ -64,7 +64,7 @@ class MatchInfo(Base):
             self.mapName = 'N/A'
     
     def __repr__(self):
-        return '<Match info %r %r>' % (self.id, self.match_id)
+        return '<Match info %r %r>' % (self.id, self.matchID)
         
         
 class Roster(Base):
@@ -72,17 +72,17 @@ class Roster(Base):
     __tablename__ = 'rosters'
     
     id = Column(Integer, primary_key=True)
-    match_id = Column(Integer, ForeignKey(Match.id))
-    pubg_roster_id = Column(String(50), nullable=False)
+    matchID = Column(Integer, ForeignKey(Match.id))
+    pubgRosterID = Column(String(50), nullable=False)
     
     participants = relationship('Record',
                                backref='roster')
     
-    def __init__(self, pubg_roster_id):
+    def __init__(self, pubgRosterID):
         
-        self.pubg_roster_id = pubg_roster_id
+        self.pubgRosterID = pubgRosterID
     def __repr__(self):
-        return '<Roster %r in match %r>' % (self.id, self.match_id)    
+        return '<Roster %r in match %r>' % (self.id, self.matchID)
     
     
 class Record(Base):
@@ -91,9 +91,9 @@ class Record(Base):
     
     id = Column(Integer, primary_key=True)
     
-    player_id = Column(Integer, ForeignKey(Player.id))
-    roster_id = Column(Integer, ForeignKey(Roster.id))
-    pubg_match_id = Column(String(50), nullable=False)
+    playerID = Column(Integer, ForeignKey(Player.id))
+    rosterID = Column(Integer, ForeignKey(Roster.id))
+    pubgMatchID = Column(String(50), nullable=False)
     season = Column(Integer, nullable=False)
     
     stats = relationship('MatchStats', 
@@ -101,13 +101,13 @@ class Record(Base):
                               cascade='delete',
                               backref='record')
     
-    def __init__(self, pubg_match_id, season):
+    def __init__(self, pubgMatchID, season):
         
-        self.pubg_match_id = pubg_match_id
+        self.pubgMatchID = pubgMatchID
         self.season = season
         
     def __repr__(self):
-        return '<Record of player %r in roster %r>' % (self.player_id, self.roster_id)
+        return '<Record of player %r in roster %r>' % (self.playerID, self.rosterID)
 
     
 class MatchStats(Base):
@@ -115,53 +115,53 @@ class MatchStats(Base):
     __tablename__ = 'match_stats'
     
     id = Column(Integer, primary_key=True)
-    record_id = Column(Integer, ForeignKey(Record.id), unique=True)
+    recordID = Column(Integer, ForeignKey(Record.id), unique=True)
     
     place = Column(Integer)
-    winPointDelta = Column(Float)
-    killPointDelta = Column(Float)
+    winPointsDelta = Column(Float)
+    killPointsDelta = Column(Float)
     damage = Column(Float)
-    kill = Column(Integer)
-    headshot = Column(Integer)
-    assist = Column(Integer)
-    roadKill = Column(Integer)
-    vehicleDestroyed= Column(Integer)
-    dbno = Column(Integer)
+    kills = Column(Integer)
+    headshotKills = Column(Integer)
+    assists = Column(Integer)
+    roadKills = Column(Integer)
+    vehicleDestroys= Column(Integer)
+    dBNOs = Column(Integer)
     timeSurvived = Column(Float)
     walkDistance = Column(Float)
     rideDistance = Column(Float)
-    boost = Column(Integer)
-    heal = Column(Integer)
-    weapon = Column(Integer)
-    revive = Column(Integer)
+    boosts = Column(Integer)
+    heals = Column(Integer)
+    weapons = Column(Integer)
+    revives = Column(Integer)
     deathType = Column(String(30))
-    teamKill = Column(Integer)
+    teamKills = Column(Integer)
     longestKill = Column(Float)
     
     def __init__(self, stats):
-        
+        # 스키마 포맷 통일 - 18.05.20 by JH
         self.place = stats['winPlace']
-        self.winPointDelta = stats['winPointsDelta']
-        self.killPointDelta = stats['killPointsDelta']
+        self.winPointsDelta = stats['winPointsDelta']
+        self.killPointsDelta = stats['killPointsDelta']
         self.damage = stats['damageDealt']
-        self.kill = stats['kills']
-        self.headshot = stats['headshotKills']
-        self.assist = stats['assists']
-        self.roadKill = stats['roadKills']
-        self.vehicleDestroyed = stats['vehicleDestroys']
-        self.dbno = stats['DBNOs']
+        self.kills = stats['kills']
+        self.headshotKills = stats['headshotKills']
+        self.assists = stats['assists']
+        self.roadKills = stats['roadKills']
+        self.vehicleDestroys = stats['vehicleDestroys']
+        self.dBNOs = stats['DBNOs']
         self.timeSurvived = stats['timeSurvived']
         self.walkDistance = stats['walkDistance'] 
         self.rideDistance = stats['rideDistance']
-        self.boost = stats['boosts']
-        self.heal = stats['heals'] 
-        self.weapon = stats['weaponsAcquired']
-        self.revive = stats['revives']    
+        self.boosts = stats['boosts']
+        self.heals = stats['heals']
+        self.weapons = stats['weaponsAcquired']
+        self.revives = stats['revives']
         self.deathType = stats['deathType']
         self.longestKill = stats['longestKill']
-        self.teamKill = stats['teamKills']
+        self.teamKills = stats['teamKills']
         
     def __repr__(self):
-        return '<Match stats %r %r>' % (self.id, self.record_id)
+        return '<Match stats %r %r>' % (self.id, self.recordID)
     
     

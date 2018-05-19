@@ -30,7 +30,7 @@ def show_about():
 def show_leaderboard():
     """Show leaderboard page."""
     
-    return render_template('placeholder.html')
+    return render_template('leaderboard.html')
 
 @pubgi.route('/statistics')
 def show_statistics():

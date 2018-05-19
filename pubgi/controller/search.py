@@ -50,7 +50,7 @@ def search():
         player_id = getPlayerId(region, query, api_key)
         
         if player_id:
-            exist = dao.query(Player).filter_by(pubg_id=player_id).first()
+            exist = dao.query(Player).filter_by(pubgID=player_id).first()
         
         if player_id and not exist:
             try:

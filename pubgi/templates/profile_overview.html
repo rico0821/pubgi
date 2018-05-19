@@ -27,11 +27,11 @@
                         <div class="row">
                             <!-- win rating -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>승 레이팅</small><p class="p-stats">{{ player.solo[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>승 레이팅</small><p class="p-stats">{{ player.solo[-1].winPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- kill rating -->
                             <div class="col-md-6 m-0 pr-0">
-                                <small>킬 레이팅</small><p class="p-stats">{{ player.solo[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.solo[-1].killPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                         </div>
                     </li>
@@ -40,7 +40,7 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.solo[-1].kill / player.solo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.solo[-1].kills / player.solo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
@@ -64,7 +64,7 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.solo[-1].headshot / player.solo[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small><p class="p-stats">{{ (player.solo[-1].headshotKills / player.solo[-1].kills * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->
@@ -101,11 +101,11 @@
                         <div class="row">
                             <!-- win rating -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>승 레이팅</small><p class="p-stats">{{ player.duo[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>승 레이팅</small><p class="p-stats">{{ player.duo[-1].winPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- kill rating -->
                             <div class="col-md-6 m-0 pr-0">
-                                <small>킬 레이팅</small><p class="p-stats">{{ player.duo[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.duo[-1].killPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                         </div>
                     </li>
@@ -114,7 +114,7 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.duo[-1].kill / player.duo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.duo[-1].kills / player.duo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
@@ -138,7 +138,7 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.duo[-1].headshot / player.duo[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small><p class="p-stats">{{ (player.duo[-1].headshotKills / player.duo[-1].kills * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->
@@ -175,11 +175,11 @@
                         <div class="row">
                             <!-- win rating -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>승 레이팅</small><p class="p-stats">{{ player.squad[-1].winPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>승 레이팅</small><p class="p-stats">{{ player.squad[-1].winPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- kill rating -->
                             <div class="col-md-6 m-0 pr-0">
-                                <small>킬 레이팅</small><p class="p-stats">{{ player.squad[-1].killPoint | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
+                                <small>킬 레이팅</small><p class="p-stats">{{ player.squad[-1].killPoints | int | numberformat }}</p><small class="small-top-percentile">상위 %</small>
                             </div>
                         </div>
                     </li>
@@ -188,7 +188,7 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.squad[-1].kill / player.squad[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.squad[-1].kills / player.squad[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
@@ -212,7 +212,7 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.squad[-1].headshot / player.squad[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small><p class="p-stats">{{ (player.squad[-1].headshotKills / player.squad[-1].kill * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->
@@ -340,15 +340,15 @@
                                     <td>{{ record.roster.match.info.mapName | translate_map }}</td>
                                     <td>#{{ record.stats.place }}</td>
                                     <td>{{ (record.stats.timeSurvived / 60) | int}} 분 {{ (record.stats.timeSurvived % 60) | int }}초</td>
-                                    {% if record.stats.winPointDelta > 0 %}
-                                    <td class="green-text">+{{ record.stats.winPointDelta | int }}</td>
+                                    {% if record.stats.winPointsDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.winPointsDelta | int }}</td>
                                     {% else %}
-                                    <td class="red-text">{{ record.stats.winPointDelta | int }}</td>
+                                    <td class="red-text">{{ record.stats.winPointsDelta | int }}</td>
                                     {% endif %}
-                                    {% if record.stats.killPointDelta > 0 %}
-                                    <td class="green-text">+{{ record.stats.killPointDelta | int }}</td>
+                                    {% if record.stats.killPointsDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.killPointsDelta | int }}</td>
                                     {% else %}
-                                    <td class="red-text">{{ record.stats.killPointDelta | int }}</td>
+                                    <td class="red-text">{{ record.stats.killPointsDelta | int }}</td>
                                     {% endif %}
                                 </tr>
                                 <!-- end of player data -->
@@ -375,12 +375,12 @@
                             <tbody>
                                 <!-- player data -->
                                 <tr>
-                                    <td>{{ record.stats.kill }}</td>
-                                    <td>{{ record.stats.assist }}</td>
-                                    <td>{{ record.stats.dbno }}</td>
+                                    <td>{{ record.stats.kills }}</td>
+                                    <td>{{ record.stats.assists }}</td>
+                                    <td>{{ record.stats.dBNOs }}</td>
                                     <td>{{ record.stats.damage | round }}</td>
-                                    <td>{{ record.stats.headshot }}</td>
-                                    <td>{{ record.stats.roadKill }}</td>
+                                    <td>{{ record.stats.headshotKills }}</td>
+                                    <td>{{ record.stats.roadKills }}</td>
                                     <td>{{ record.stats.longestKill }} m</td>
                                 </tr>
                                 <!-- end of player data -->
@@ -407,13 +407,13 @@
                             <tbody>
                                 <!-- player data -->
                                 <tr>
-                                    <td>{{ record.stats.vehicleDestroyed }} 대</td>
+                                    <td>{{ record.stats.vehicleDestroys }} 대</td>
                                     <td>{{ (record.stats.walkDistance / 1000) | round(2) }} km</td>
                                     <td>{{ (record.stats.rideDistance / 1000) | round(2) }} km</td>
-                                    <td>{{ record.stats.boost }}</td>
-                                    <td>{{ record.stats.heal }}</td>
-                                    <td>{{ record.stats.weapon }} 개</td>
-                                    <td>{{ record.stats.revive }}</td>
+                                    <td>{{ record.stats.boosts }}</td>
+                                    <td>{{ record.stats.heals }}</td>
+                                    <td>{{ record.stats.weapons }} 개</td>
+                                    <td>{{ record.stats.revives }}</td>
                                 </tr>
                                 <!-- end of player data -->
                             </tbody>
