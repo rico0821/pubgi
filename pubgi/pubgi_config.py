@@ -18,7 +18,7 @@ class pubgiConfig:
     
     # SQLAlchemy
     DB_URL= 'sqlite:///'
-    DB_FILE_PATH= 'resource/database/pubg'
+    DB_FILE_PATH= 'resource/database/pubgi'
     TMP_FOLDER = 'resource/tmp/'
     
     # MongoDB
@@ -30,11 +30,11 @@ class pubgiConfig:
     
     # Session
     PERMANENT_SESSION_LIFETIME = 60 * 60
-    SESSION_COOKIE_NAME= 'pubg_session'
+    SESSION_COOKIE_NAME= 'pubgi_session'
     
     # Log
     LOG_LEVEL= 'debug'
-    LOG_FILE_PATH= 'resource/log/pubg.log'
+    LOG_FILE_PATH= 'resource/log/pubgi.log'
     DB_LOG_FLAG = 'False'
     
     # Paging
