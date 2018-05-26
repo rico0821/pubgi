@@ -30,7 +30,6 @@ def show_leaderboard():
     """
     Show leaderboard page for given region and mode.
     
-<<<<<<< HEAD
     ARGS: region, mode
     
     """
@@ -62,11 +61,8 @@ def show_leaderboard():
                          limit(100).all()
     
     return render_template('leaderboard.html', mode=mode,
-                                                            region=region,
-                                                            leaders=leaders)
-=======
-    return render_template('leaderboard.html')
->>>>>>> 160f4e803a7e87b7a5891abf0a19609302e55c66
+                                               region=region,
+                                               leaders=leaders)
 
 @pubgi.route('/statistics')
 def show_statistics():
