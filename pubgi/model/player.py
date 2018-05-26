@@ -102,7 +102,11 @@ class PlayerStats(Base):
         
     def aggregate(self, stats):
         
+<<<<<<< HEAD
         self.games += 1
+=======
+        self.game += 1
+>>>>>>> 160f4e803a7e87b7a5891abf0a19609302e55c66
         self.lastwinPoints = stats['winPoints']
         self.lastkillPoints = stats['killPoints']
         self.winPoints = self.lastwinPoints + stats['winPointsDelta']

@@ -1,0 +1,689 @@
+2018-05-18 05:41:20,130 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:41:20,131 - INFO - template folder: ../templates
+2018-05-18 05:42:29,839 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:42:29,839 - INFO - template folder: ../templates
+2018-05-18 05:43:18,324 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:43:18,324 - INFO - template folder: ../templates
+2018-05-18 05:43:20,071 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:43:20,071 - INFO - template folder: ../templates
+2018-05-18 05:49:07,393 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:49:07,393 - INFO - template folder: ../templates
+2018-05-18 05:49:09,034 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:49:09,034 - INFO - template folder: ../templates
+2018-05-18 05:52:21,615 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:52:21,616 - INFO - template folder: ../templates
+2018-05-18 05:52:23,226 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:52:23,226 - INFO - template folder: ../templates
+2018-05-18 05:52:33,711 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,063 - INFO - Received API request <Response [404]>: took 0.352126 sec
+2018-05-18 05:52:34,064 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,294 - INFO - Received API request <Response [404]>: took 0.230167 sec
+2018-05-18 05:52:34,295 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,519 - INFO - Received API request <Response [404]>: took 0.223716 sec
+2018-05-18 05:52:34,519 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,667 - INFO - Received API request <Response [404]>: took 0.148123 sec
+2018-05-18 05:52:34,668 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:34,797 - INFO - Received API request <Response [404]>: took 0.129318 sec
+2018-05-18 05:52:34,798 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,018 - INFO - Received API request <Response [404]>: took 0.220583 sec
+2018-05-18 05:52:35,019 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,162 - INFO - Received API request <Response [404]>: took 0.143124 sec
+2018-05-18 05:52:35,163 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:52:35,385 - INFO - Received API request <Response [404]>: took 0.221857 sec
+2018-05-18 05:54:27,574 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:54:27,574 - INFO - template folder: ../templates
+2018-05-18 05:54:29,158 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 05:54:29,158 - INFO - template folder: ../templates
+2018-05-18 05:54:37,119 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,397 - INFO - Received API request <Response [404]>: took 0.278099 sec
+2018-05-18 05:54:37,398 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,689 - INFO - Received API request <Response [404]>: took 0.290583 sec
+2018-05-18 05:54:37,689 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:37,908 - INFO - Received API request <Response [404]>: took 0.219169 sec
+2018-05-18 05:54:37,909 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,108 - INFO - Received API request <Response [404]>: took 0.199339 sec
+2018-05-18 05:54:38,109 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,234 - INFO - Received API request <Response [404]>: took 0.125474 sec
+2018-05-18 05:54:38,235 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,363 - INFO - Received API request <Response [404]>: took 0.127509 sec
+2018-05-18 05:54:38,363 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,587 - INFO - Received API request <Response [404]>: took 0.224351 sec
+2018-05-18 05:54:38,588 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:54:38,805 - INFO - Received API request <Response [404]>: took 0.217392 sec
+2018-05-18 05:55:11,163 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-18 05:55:11,416 - INFO - Received API request <Response [200]>: took 0.253457 sec
+2018-05-18 05:55:11,417 - INFO - Waiting for API rate limit...
+2018-05-18 05:55:17,423 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-18 05:55:17,634 - INFO - Received API request <Response [200]>: took 0.211446 sec
+2018-05-18 05:55:17,635 - INFO - Waiting for API rate limit...
+2018-05-18 05:55:46,232 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,459 - INFO - Received API request <Response [404]>: took 0.225964 sec
+2018-05-18 05:55:46,459 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,712 - INFO - Received API request <Response [404]>: took 0.253262 sec
+2018-05-18 05:55:46,713 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:46,905 - INFO - Received API request <Response [404]>: took 0.192165 sec
+2018-05-18 05:55:46,905 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,080 - INFO - Received API request <Response [404]>: took 0.174563 sec
+2018-05-18 05:55:47,081 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,221 - INFO - Received API request <Response [404]>: took 0.139757 sec
+2018-05-18 05:55:47,221 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,351 - INFO - Received API request <Response [404]>: took 0.130244 sec
+2018-05-18 05:55:47,352 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,486 - INFO - Received API request <Response [404]>: took 0.133479 sec
+2018-05-18 05:55:47,486 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-18 05:55:47,624 - INFO - Received API request <Response [404]>: took 0.138198 sec
+2018-05-18 05:55:55,825 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,015 - INFO - Received API request <Response [404]>: took 0.189531 sec
+2018-05-18 05:55:56,015 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,209 - INFO - Received API request <Response [404]>: took 0.193287 sec
+2018-05-18 05:55:56,209 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,329 - INFO - Received API request <Response [429]>: took 0.119578 sec
+2018-05-18 05:55:56,329 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,514 - INFO - Received API request <Response [429]>: took 0.184413 sec
+2018-05-18 05:55:56,514 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,681 - INFO - Received API request <Response [429]>: took 0.166038 sec
+2018-05-18 05:55:56,681 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,805 - INFO - Received API request <Response [429]>: took 0.123172 sec
+2018-05-18 05:55:56,805 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:56,921 - INFO - Received API request <Response [429]>: took 0.116319 sec
+2018-05-18 05:55:56,922 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=whitewalk
+2018-05-18 05:55:57,104 - INFO - Received API request <Response [429]>: took 0.181468 sec
+2018-05-18 05:56:02,818 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=ak
+2018-05-18 05:56:03,018 - INFO - Received API request <Response [429]>: took 0.199758 sec
+2018-05-18 05:56:03,019 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=ak
+2018-05-18 05:56:03,213 - INFO - Received API request <Response [429]>: took 0.193759 sec
+2018-05-18 05:56:03,213 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=ak
+2018-05-18 05:56:03,417 - INFO - Received API request <Response [429]>: took 0.203377 sec
+2018-05-18 05:56:03,417 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=ak
+2018-05-18 05:56:03,553 - INFO - Received API request <Response [429]>: took 0.135529 sec
+2018-05-18 05:56:03,553 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=ak
+2018-05-18 05:56:03,708 - INFO - Received API request <Response [429]>: took 0.154394 sec
+2018-05-18 05:56:03,708 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=ak
+2018-05-18 05:56:03,832 - INFO - Received API request <Response [429]>: took 0.123174 sec
+2018-05-18 05:56:03,832 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=ak
+2018-05-18 05:56:03,953 - INFO - Received API request <Response [429]>: took 0.121061 sec
+2018-05-18 05:56:03,954 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=ak
+2018-05-18 05:56:04,140 - INFO - Received API request <Response [429]>: took 0.186027 sec
+2018-05-18 09:19:31,656 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-05-18 09:19:31,656 - INFO - template folder: ../templates
+2018-05-19 16:26:31,760 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 16:26:31,762 - INFO - template folder: ../templates
+2018-05-19 16:58:07,553 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 16:58:07,553 - INFO - template folder: ../templates
+2018-05-19 16:58:10,010 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 16:58:10,010 - INFO - template folder: ../templates
+2018-05-19 16:59:42,228 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 16:59:42,228 - INFO - template folder: ../templates
+2018-05-19 16:59:44,691 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 16:59:44,691 - INFO - template folder: ../templates
+2018-05-19 16:59:55,812 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:56,692 - INFO - Received API request <Response [404]>: took 0.880090 sec
+2018-05-19 16:59:56,693 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:56,985 - INFO - Received API request <Response [404]>: took 0.291627 sec
+2018-05-19 16:59:56,985 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:57,314 - INFO - Received API request <Response [404]>: took 0.329099 sec
+2018-05-19 16:59:57,315 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:57,531 - INFO - Received API request <Response [404]>: took 0.215724 sec
+2018-05-19 16:59:57,531 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:57,834 - INFO - Received API request <Response [404]>: took 0.302184 sec
+2018-05-19 16:59:57,834 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:58,115 - INFO - Received API request <Response [404]>: took 0.280676 sec
+2018-05-19 16:59:58,116 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:58,354 - INFO - Received API request <Response [404]>: took 0.238445 sec
+2018-05-19 16:59:58,355 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-19 16:59:58,925 - INFO - Received API request <Response [404]>: took 0.570530 sec
+2018-05-19 17:23:37,124 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:23:37,124 - INFO - template folder: ../templates
+2018-05-19 17:23:39,672 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:23:39,672 - INFO - template folder: ../templates
+2018-05-19 17:23:47,539 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:48,330 - INFO - Received API request <Response [404]>: took 0.790339 sec
+2018-05-19 17:23:48,333 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:48,958 - INFO - Received API request <Response [404]>: took 0.624722 sec
+2018-05-19 17:23:48,959 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:49,583 - INFO - Received API request <Response [404]>: took 0.623700 sec
+2018-05-19 17:23:49,583 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:50,129 - INFO - Received API request <Response [404]>: took 0.545536 sec
+2018-05-19 17:23:50,129 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:50,345 - INFO - Received API request <Response [404]>: took 0.215020 sec
+2018-05-19 17:23:50,345 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:50,895 - INFO - Received API request <Response [404]>: took 0.549833 sec
+2018-05-19 17:23:50,896 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:51,540 - INFO - Received API request <Response [404]>: took 0.644324 sec
+2018-05-19 17:23:51,541 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-19 17:23:51,789 - INFO - Received API request <Response [404]>: took 0.247852 sec
+2018-05-19 17:29:39,594 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:29:39,594 - INFO - template folder: ../templates
+2018-05-19 17:29:42,024 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:29:42,025 - INFO - template folder: ../templates
+2018-05-19 17:33:20,149 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:33:20,150 - INFO - template folder: ../templates
+2018-05-19 17:33:22,516 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:33:22,517 - INFO - template folder: ../templates
+2018-05-19 17:33:32,213 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:32,684 - INFO - Received API request <Response [404]>: took 0.471469 sec
+2018-05-19 17:33:32,685 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:32,991 - INFO - Received API request <Response [404]>: took 0.306311 sec
+2018-05-19 17:33:32,992 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:33,363 - INFO - Received API request <Response [404]>: took 0.371634 sec
+2018-05-19 17:33:33,364 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:33,590 - INFO - Received API request <Response [404]>: took 0.225983 sec
+2018-05-19 17:33:33,591 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:33,890 - INFO - Received API request <Response [404]>: took 0.298683 sec
+2018-05-19 17:33:33,890 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:34,195 - INFO - Received API request <Response [404]>: took 0.305168 sec
+2018-05-19 17:33:34,196 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:34,830 - INFO - Received API request <Response [404]>: took 0.634024 sec
+2018-05-19 17:33:34,831 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-19 17:33:35,046 - INFO - Received API request <Response [404]>: took 0.215025 sec
+2018-05-19 17:34:41,977 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:34:41,978 - INFO - template folder: ../templates
+2018-05-19 17:34:44,312 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:34:44,312 - INFO - template folder: ../templates
+2018-05-19 17:34:57,314 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-19 17:34:57,746 - INFO - Received API request <Response [404]>: took 0.431295 sec
+2018-05-19 17:34:57,746 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:01,833 - INFO - Received API request <Response [404]>: took 4.086525 sec
+2018-05-19 17:35:01,834 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:02,080 - INFO - Received API request <Response [404]>: took 0.246582 sec
+2018-05-19 17:35:02,081 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:02,682 - INFO - Received API request <Response [404]>: took 0.600819 sec
+2018-05-19 17:35:02,682 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:02,903 - INFO - Received API request <Response [404]>: took 0.220083 sec
+2018-05-19 17:35:02,903 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:03,463 - INFO - Received API request <Response [404]>: took 0.559367 sec
+2018-05-19 17:35:03,463 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:03,684 - INFO - Received API request <Response [404]>: took 0.220261 sec
+2018-05-19 17:35:03,684 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-19 17:35:03,910 - INFO - Received API request <Response [404]>: took 0.225454 sec
+2018-05-19 17:35:36,983 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=akv
+2018-05-19 17:35:37,565 - INFO - Received API request <Response [404]>: took 0.581044 sec
+2018-05-19 17:35:37,565 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=akv
+2018-05-19 17:35:38,128 - INFO - Received API request <Response [404]>: took 0.562460 sec
+2018-05-19 17:35:38,128 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=akv
+2018-05-19 17:35:38,669 - INFO - Received API request <Response [429]>: took 0.540982 sec
+2018-05-19 17:35:38,670 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=akv
+2018-05-19 17:35:39,887 - INFO - Received API request <Response [429]>: took 1.216413 sec
+2018-05-19 17:35:39,887 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=akv
+2018-05-19 17:35:40,425 - INFO - Received API request <Response [429]>: took 0.537602 sec
+2018-05-19 17:35:40,426 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=akv
+2018-05-19 17:35:40,626 - INFO - Received API request <Response [429]>: took 0.199793 sec
+2018-05-19 17:35:40,626 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=akv
+2018-05-19 17:35:40,865 - INFO - Received API request <Response [429]>: took 0.238327 sec
+2018-05-19 17:35:40,865 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=akv
+2018-05-19 17:35:41,071 - INFO - Received API request <Response [429]>: took 0.205614 sec
+2018-05-19 17:36:03,018 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:03,936 - INFO - Received API request <Response [200]>: took 0.918047 sec
+2018-05-19 17:36:03,975 - INFO - New player <Player 'Blackwalk' 'pc-krjp'> added.
+2018-05-19 17:36:03,975 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:04,565 - INFO - Received API request <Response [404]>: took 0.589305 sec
+2018-05-19 17:36:04,565 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:05,183 - INFO - Received API request <Response [200]>: took 0.617317 sec
+2018-05-19 17:36:05,185 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:05,494 - INFO - Received API request <Response [404]>: took 0.308772 sec
+2018-05-19 17:36:05,495 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:05,788 - INFO - Received API request <Response [200]>: took 0.293544 sec
+2018-05-19 17:36:05,790 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:06,007 - INFO - Received API request <Response [404]>: took 0.216985 sec
+2018-05-19 17:36:06,007 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:06,219 - INFO - Received API request <Response [404]>: took 0.210993 sec
+2018-05-19 17:36:06,219 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=Blackwalk
+2018-05-19 17:36:06,914 - INFO - Received API request <Response [200]>: took 0.694265 sec
+2018-05-19 17:38:42,186 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:38:42,187 - INFO - template folder: ../templates
+2018-05-19 17:38:44,663 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:38:44,664 - INFO - template folder: ../templates
+2018-05-19 17:38:51,244 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:52,004 - INFO - Received API request <Response [404]>: took 0.759804 sec
+2018-05-19 17:38:52,004 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:52,289 - INFO - Received API request <Response [404]>: took 0.284957 sec
+2018-05-19 17:38:52,290 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:52,841 - INFO - Received API request <Response [404]>: took 0.551391 sec
+2018-05-19 17:38:52,842 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:53,055 - INFO - Received API request <Response [404]>: took 0.212500 sec
+2018-05-19 17:38:53,055 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:53,268 - INFO - Received API request <Response [404]>: took 0.212948 sec
+2018-05-19 17:38:53,269 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:53,487 - INFO - Received API request <Response [404]>: took 0.218252 sec
+2018-05-19 17:38:53,488 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:54,031 - INFO - Received API request <Response [404]>: took 0.543180 sec
+2018-05-19 17:38:54,031 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=blackwalk
+2018-05-19 17:38:54,256 - INFO - Received API request <Response [404]>: took 0.224160 sec
+2018-05-19 17:53:46,544 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-19 17:53:47,624 - INFO - Received API request <Response [200]>: took 1.079043 sec
+2018-05-19 17:55:57,557 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:55:57,557 - INFO - template folder: ../templates
+2018-05-19 17:55:59,187 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-19 17:55:59,922 - INFO - Received API request <Response [200]>: took 0.735061 sec
+2018-05-19 17:56:12,333 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:56:12,333 - INFO - template folder: ../templates
+2018-05-19 17:56:14,704 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:56:14,704 - INFO - template folder: ../templates
+2018-05-19 17:56:27,392 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:56:27,392 - INFO - template folder: ../templates
+2018-05-19 17:56:29,760 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:56:29,760 - INFO - template folder: ../templates
+2018-05-19 17:56:39,770 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:40,436 - INFO - Received API request <Response [200]>: took 0.666269 sec
+2018-05-19 17:56:40,498 - INFO - New player <Player 'Blackwalk' 'pc-krjp'> added.
+2018-05-19 17:56:40,498 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:40,728 - INFO - Received API request <Response [404]>: took 0.230004 sec
+2018-05-19 17:56:40,729 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:40,985 - INFO - Received API request <Response [200]>: took 0.255762 sec
+2018-05-19 17:56:40,986 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:41,693 - INFO - Received API request <Response [404]>: took 0.706341 sec
+2018-05-19 17:56:41,694 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:42,121 - INFO - Received API request <Response [200]>: took 0.426653 sec
+2018-05-19 17:56:42,122 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:42,796 - INFO - Received API request <Response [404]>: took 0.673272 sec
+2018-05-19 17:56:42,796 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:43,075 - INFO - Received API request <Response [404]>: took 0.278622 sec
+2018-05-19 17:56:43,076 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=Blackwalk
+2018-05-19 17:56:43,339 - INFO - Received API request <Response [200]>: took 0.263344 sec
+2018-05-19 17:58:29,996 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:58:29,997 - INFO - template folder: ../templates
+2018-05-19 17:58:32,341 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 17:58:32,341 - INFO - template folder: ../templates
+2018-05-19 18:03:09,944 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:03:09,944 - INFO - template folder: ../templates
+2018-05-19 18:03:12,305 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:03:12,306 - INFO - template folder: ../templates
+2018-05-19 18:03:36,986 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:03:37,796 - INFO - Received API request <Response [200]>: took 0.810439 sec
+2018-05-19 18:03:37,833 - INFO - New player <Player '1002c' 'pc-krjp'> added.
+2018-05-19 18:03:37,833 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=1002c
+2018-05-19 18:03:38,436 - INFO - Received API request <Response [404]>: took 0.602593 sec
+2018-05-19 18:03:38,437 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=1002c
+2018-05-19 18:03:38,719 - INFO - Received API request <Response [404]>: took 0.282583 sec
+2018-05-19 18:03:38,720 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=1002c
+2018-05-19 18:03:39,323 - INFO - Received API request <Response [404]>: took 0.603345 sec
+2018-05-19 18:03:39,324 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=1002c
+2018-05-19 18:03:39,555 - INFO - Received API request <Response [200]>: took 0.231121 sec
+2018-05-19 18:03:39,557 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=1002c
+2018-05-19 18:03:40,166 - INFO - Received API request <Response [404]>: took 0.609036 sec
+2018-05-19 18:03:40,166 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=1002c
+2018-05-19 18:03:40,732 - INFO - Received API request <Response [404]>: took 0.565202 sec
+2018-05-19 18:03:40,732 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=1002c
+2018-05-19 18:03:40,939 - INFO - Received API request <Response [404]>: took 0.206213 sec
+2018-05-19 18:06:35,847 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:06:35,848 - INFO - template folder: ../templates
+2018-05-19 18:08:19,947 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:08:19,947 - INFO - template folder: ../templates
+2018-05-19 18:12:17,653 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:12:17,653 - INFO - template folder: ../templates
+2018-05-19 18:12:57,827 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:12:57,827 - INFO - template folder: ../templates
+2018-05-19 18:13:00,236 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:13:00,236 - INFO - template folder: ../templates
+2018-05-19 18:13:08,588 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:13:09,457 - INFO - Received API request <Response [200]>: took 0.869099 sec
+2018-05-19 18:13:09,518 - INFO - New player <Player '1002c' 'pc-krjp'> added.
+2018-05-19 18:13:09,518 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=1002c
+2018-05-19 18:13:10,169 - INFO - Received API request <Response [404]>: took 0.651242 sec
+2018-05-19 18:13:10,170 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=1002c
+2018-05-19 18:13:10,389 - INFO - Received API request <Response [404]>: took 0.218830 sec
+2018-05-19 18:13:10,390 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=1002c
+2018-05-19 18:13:10,595 - INFO - Received API request <Response [404]>: took 0.204664 sec
+2018-05-19 18:13:10,595 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=1002c
+2018-05-19 18:13:11,230 - INFO - Received API request <Response [200]>: took 0.634804 sec
+2018-05-19 18:13:11,232 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=1002c
+2018-05-19 18:13:12,892 - INFO - Received API request <Response [404]>: took 1.660168 sec
+2018-05-19 18:13:12,893 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=1002c
+2018-05-19 18:13:13,202 - INFO - Received API request <Response [404]>: took 0.309083 sec
+2018-05-19 18:13:13,202 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=1002c
+2018-05-19 18:13:13,431 - INFO - Received API request <Response [404]>: took 0.228710 sec
+2018-05-19 18:17:13,728 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:17:13,729 - INFO - template folder: ../templates
+2018-05-19 18:17:16,140 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:17:16,140 - INFO - template folder: ../templates
+2018-05-19 18:17:27,650 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:17:28,368 - INFO - Received API request <Response [200]>: took 0.717832 sec
+2018-05-19 18:17:28,392 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=1002c
+2018-05-19 18:17:28,949 - INFO - Received API request <Response [404]>: took 0.557034 sec
+2018-05-19 18:17:28,950 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=1002c
+2018-05-19 18:17:29,503 - INFO - Received API request <Response [404]>: took 0.552747 sec
+2018-05-19 18:17:29,503 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=1002c
+2018-05-19 18:17:29,705 - INFO - Received API request <Response [404]>: took 0.201360 sec
+2018-05-19 18:17:29,706 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=1002c
+2018-05-19 18:17:29,969 - INFO - Received API request <Response [200]>: took 0.263624 sec
+2018-05-19 18:17:29,971 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=1002c
+2018-05-19 18:17:30,174 - INFO - Received API request <Response [404]>: took 0.202955 sec
+2018-05-19 18:17:30,175 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=1002c
+2018-05-19 18:17:30,385 - INFO - Received API request <Response [404]>: took 0.210397 sec
+2018-05-19 18:17:30,386 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=1002c
+2018-05-19 18:17:30,808 - INFO - Received API request <Response [404]>: took 0.421542 sec
+2018-05-19 18:18:01,394 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:18:01,394 - INFO - template folder: ../templates
+2018-05-19 18:18:08,607 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:18:09,276 - INFO - Received API request <Response [200]>: took 0.669660 sec
+2018-05-19 18:18:09,277 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:18:09,880 - INFO - Received API request <Response [200]>: took 0.602579 sec
+2018-05-19 18:18:09,880 - INFO - No recent matches were recorded for player '1002c' [region: 'pc-krjp']
+2018-05-19 18:18:09,881 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/ae8d63f9-4f14-47e8-8de6-87cbf57dd889
+2018-05-19 18:18:10,721 - INFO - Received API request <Response [200]>: took 0.840261 sec
+2018-05-19 18:18:10,728 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/06/17/2cd84083-55ac-11e8-9f7c-0a58647cd10a-telemetry.json
+2018-05-19 18:18:18,039 - INFO - Received API request <Response [200]>: took 7.307134 sec
+2018-05-19 18:18:29,728 - INFO - Telemetry data added for match <Match 'ae8d63f9-4f14-47e8-8de6-87cbf57dd889'>
+2018-05-19 18:18:29,777 - INFO - <Record of player 1 in roster 1> with <Match stats 1 1> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:18:29,777 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/bd8fffc7-a132-4385-9f80-60c0613f16bd
+2018-05-19 18:18:30,263 - INFO - Received API request <Response [200]>: took 0.485468 sec
+2018-05-19 18:18:30,267 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/06/30/0824275d-55ae-11e8-9f80-0a58647cb60c-telemetry.json
+2018-05-19 18:18:37,803 - INFO - Received API request <Response [200]>: took 7.535811 sec
+2018-05-19 18:18:49,260 - INFO - Telemetry data added for match <Match 'bd8fffc7-a132-4385-9f80-60c0613f16bd'>
+2018-05-19 18:18:49,361 - INFO - <Record of player 1 in roster 2> with <Match stats 2 2> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:18:49,362 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/b6ef0f5c-9199-4c3b-a859-f82f69add5c9
+2018-05-19 18:18:49,617 - INFO - Received API request <Response [200]>: took 0.255566 sec
+2018-05-19 18:18:49,623 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/06/08feb1f7-55b3-11e8-b955-0a58647cc60d-telemetry.json
+2018-05-19 18:18:56,355 - INFO - Received API request <Response [200]>: took 6.731781 sec
+2018-05-19 18:19:07,996 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:19:08,712 - INFO - Received API request <Response [200]>: took 0.715244 sec
+2018-05-19 18:19:08,712 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:19:09,404 - INFO - Received API request <Response [200]>: took 0.691118 sec
+2018-05-19 18:19:09,404 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/b6ef0f5c-9199-4c3b-a859-f82f69add5c9
+2018-05-19 18:19:09,486 - INFO - Received API request <Response [200]>: took 0.081675 sec
+2018-05-19 18:19:09,490 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/06/08feb1f7-55b3-11e8-b955-0a58647cc60d-telemetry.json
+2018-05-19 18:19:09,793 - INFO - Received API request <Response [200]>: took 0.302915 sec
+2018-05-19 18:19:10,394 - INFO - Telemetry data added for match <Match 'b6ef0f5c-9199-4c3b-a859-f82f69add5c9'>
+2018-05-19 18:19:10,435 - INFO - <Record of player 1 in roster 3> with <Match stats 3 3> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:19:10,435 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/8000cd19-0085-4600-8c93-b99ce866a998
+2018-05-19 18:19:10,896 - INFO - Received API request <Response [200]>: took 0.460831 sec
+2018-05-19 18:19:10,901 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/27/f5916dfb-55b5-11e8-a3e5-0a58647ced09-telemetry.json
+2018-05-19 18:19:13,938 - INFO - <Record of player 1 in roster 3> with <Match stats 4 4> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:19:13,938 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/8000cd19-0085-4600-8c93-b99ce866a998
+2018-05-19 18:19:13,993 - INFO - Received API request <Response [200]>: took 0.054683 sec
+2018-05-19 18:19:13,998 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/27/f5916dfb-55b5-11e8-a3e5-0a58647ced09-telemetry.json
+2018-05-19 18:19:18,124 - INFO - Received API request <Response [200]>: took 7.222563 sec
+2018-05-19 18:19:18,823 - INFO - Received API request <Response [200]>: took 4.825570 sec
+2018-05-19 18:19:30,529 - INFO - Telemetry data added for match <Match '8000cd19-0085-4600-8c93-b99ce866a998'>
+2018-05-19 18:19:30,573 - INFO - <Record of player 1 in roster 4> with <Match stats 5 5> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:19:30,574 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/cb96d198-1477-4bc4-a086-9bd5a223c791
+2018-05-19 18:19:31,269 - INFO - Received API request <Response [200]>: took 0.694860 sec
+2018-05-19 18:19:31,273 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/54/bafae853-55b9-11e8-a36c-0a58647cf608-telemetry.json
+2018-05-19 18:19:38,499 - INFO - Received API request <Response [200]>: took 7.225339 sec
+2018-05-19 18:19:39,736 - INFO - Telemetry data added for match <Match '8000cd19-0085-4600-8c93-b99ce866a998'>
+2018-05-19 18:19:40,009 - INFO - <Record of player 1 in roster 4> with <Match stats 6 6> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:19:40,009 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/cb96d198-1477-4bc4-a086-9bd5a223c791
+2018-05-19 18:19:40,124 - INFO - Received API request <Response [200]>: took 0.114490 sec
+2018-05-19 18:19:40,194 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/07/54/bafae853-55b9-11e8-a36c-0a58647cf608-telemetry.json
+2018-05-19 18:19:40,706 - INFO - Received API request <Response [200]>: took 0.511616 sec
+2018-05-19 18:19:51,505 - INFO - Telemetry data added for match <Match 'cb96d198-1477-4bc4-a086-9bd5a223c791'>
+2018-05-19 18:19:51,594 - INFO - <Record of player 1 in roster 5> with <Match stats 7 7> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:19:51,594 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/45c0021f-baec-4397-b0c0-22a4ae370dd4
+2018-05-19 18:19:51,871 - INFO - Received API request <Response [200]>: took 0.277000 sec
+2018-05-19 18:19:51,875 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/08/24/e0e60bd2-55bd-11e8-b29a-0a58647afd02-telemetry.json
+2018-05-19 18:19:59,141 - INFO - Received API request <Response [200]>: took 7.265406 sec
+2018-05-19 18:19:59,995 - INFO - Telemetry data added for match <Match 'cb96d198-1477-4bc4-a086-9bd5a223c791'>
+2018-05-19 18:20:00,122 - INFO - <Record of player 1 in roster 5> with <Match stats 8 8> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:00,123 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/45c0021f-baec-4397-b0c0-22a4ae370dd4
+2018-05-19 18:20:00,142 - INFO - Received API request <Response [200]>: took 0.018974 sec
+2018-05-19 18:20:00,146 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/08/24/e0e60bd2-55bd-11e8-b29a-0a58647afd02-telemetry.json
+2018-05-19 18:20:01,414 - INFO - Received API request <Response [200]>: took 1.267846 sec
+2018-05-19 18:20:13,826 - INFO - Telemetry data added for match <Match '45c0021f-baec-4397-b0c0-22a4ae370dd4'>
+2018-05-19 18:20:13,884 - INFO - <Record of player 1 in roster 6> with <Match stats 9 9> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:13,884 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/6cdda1f9-64b7-4dc1-9919-db7f3f3971c4
+2018-05-19 18:20:14,138 - INFO - Received API request <Response [200]>: took 0.253526 sec
+2018-05-19 18:20:14,142 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/08/29/9e735441-55be-11e8-b003-0a58647cf808-telemetry.json
+2018-05-19 18:20:21,564 - INFO - Received API request <Response [200]>: took 7.421587 sec
+2018-05-19 18:20:22,685 - INFO - Telemetry data added for match <Match '45c0021f-baec-4397-b0c0-22a4ae370dd4'>
+2018-05-19 18:20:23,083 - INFO - <Record of player 1 in roster 6> with <Match stats 10 10> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:23,084 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/6cdda1f9-64b7-4dc1-9919-db7f3f3971c4
+2018-05-19 18:20:23,219 - INFO - Received API request <Response [200]>: took 0.135010 sec
+2018-05-19 18:20:23,230 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/08/29/9e735441-55be-11e8-b003-0a58647cf808-telemetry.json
+2018-05-19 18:20:23,704 - INFO - Received API request <Response [200]>: took 0.473918 sec
+2018-05-19 18:20:33,660 - INFO - Telemetry data added for match <Match '6cdda1f9-64b7-4dc1-9919-db7f3f3971c4'>
+2018-05-19 18:20:33,703 - INFO - <Record of player 1 in roster 7> with <Match stats 11 11> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:33,704 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/d3fe9d5d-5c7a-474e-a246-c9cec78ba292
+2018-05-19 18:20:34,000 - INFO - Received API request <Response [200]>: took 0.296024 sec
+2018-05-19 18:20:34,005 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/10/48/0f1c4827-55d2-11e8-84ae-0a58647cb60f-telemetry.json
+2018-05-19 18:20:42,444 - INFO - Telemetry data added for match <Match '6cdda1f9-64b7-4dc1-9919-db7f3f3971c4'>
+2018-05-19 18:20:42,487 - INFO - <Record of player 1 in roster 7> with <Match stats 12 12> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:42,487 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/d3fe9d5d-5c7a-474e-a246-c9cec78ba292
+2018-05-19 18:20:42,511 - INFO - Received API request <Response [200]>: took 0.023665 sec
+2018-05-19 18:20:42,516 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/10/48/0f1c4827-55d2-11e8-84ae-0a58647cb60f-telemetry.json
+2018-05-19 18:20:44,588 - INFO - Received API request <Response [200]>: took 10.583220 sec
+2018-05-19 18:20:44,602 - INFO - Received API request <Response [200]>: took 2.085674 sec
+2018-05-19 18:20:57,931 - INFO - Telemetry data added for match <Match 'd3fe9d5d-5c7a-474e-a246-c9cec78ba292'>
+2018-05-19 18:20:57,972 - INFO - <Record of player 1 in roster 8> with <Match stats 13 13> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:20:57,972 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/1f0d3c9f-8215-46a3-bf6e-7fad5c3aa352
+2018-05-19 18:20:58,258 - INFO - Received API request <Response [200]>: took 0.285282 sec
+2018-05-19 18:20:58,264 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/11/23/f36cb6d2-55d6-11e8-b003-0a58647cf808-telemetry.json
+2018-05-19 18:21:04,280 - INFO - Received API request <Response [200]>: took 6.016298 sec
+2018-05-19 18:21:08,330 - INFO - Telemetry data added for match <Match 'd3fe9d5d-5c7a-474e-a246-c9cec78ba292'>
+2018-05-19 18:21:08,534 - INFO - <Record of player 1 in roster 8> with <Match stats 14 14> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:21:08,534 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/1f0d3c9f-8215-46a3-bf6e-7fad5c3aa352
+2018-05-19 18:21:08,685 - INFO - Received API request <Response [200]>: took 0.150244 sec
+2018-05-19 18:21:08,695 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/11/23/f36cb6d2-55d6-11e8-b003-0a58647cf808-telemetry.json
+2018-05-19 18:21:09,303 - INFO - Received API request <Response [200]>: took 0.601231 sec
+2018-05-19 18:21:21,919 - INFO - Telemetry data added for match <Match '1f0d3c9f-8215-46a3-bf6e-7fad5c3aa352'>
+2018-05-19 18:21:21,984 - INFO - <Record of player 1 in roster 9> with <Match stats 15 15> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:21:21,984 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/d419e23a-71e5-43ac-84b8-296dcbe7e76c
+2018-05-19 18:21:22,271 - INFO - Received API request <Response [200]>: took 0.286844 sec
+2018-05-19 18:21:22,277 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/11/51/d770a977-55da-11e8-808d-0a58647ce90e-telemetry.json
+2018-05-19 18:21:29,008 - INFO - Telemetry data added for match <Match '1f0d3c9f-8215-46a3-bf6e-7fad5c3aa352'>
+2018-05-19 18:21:29,057 - INFO - <Record of player 1 in roster 9> with <Match stats 16 16> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:21:29,057 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/d419e23a-71e5-43ac-84b8-296dcbe7e76c
+2018-05-19 18:21:29,086 - INFO - Received API request <Response [200]>: took 0.029542 sec
+2018-05-19 18:21:29,092 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/11/51/d770a977-55da-11e8-808d-0a58647ce90e-telemetry.json
+2018-05-19 18:21:30,392 - INFO - Received API request <Response [200]>: took 8.114812 sec
+2018-05-19 18:21:31,184 - INFO - Received API request <Response [200]>: took 2.092358 sec
+2018-05-19 18:21:45,975 - INFO - Telemetry data added for match <Match 'd419e23a-71e5-43ac-84b8-296dcbe7e76c'>
+2018-05-19 18:21:46,019 - INFO - <Record of player 1 in roster 10> with <Match stats 17 17> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:21:46,019 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/8abf7ce0-5d02-43c6-a624-43639ed73e0d
+2018-05-19 18:21:46,394 - INFO - Received API request <Response [200]>: took 0.374969 sec
+2018-05-19 18:21:46,399 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/12/21/f396d10a-55de-11e8-8c04-0a58647c500c-telemetry.json
+2018-05-19 18:21:53,824 - INFO - static folder: /workspace/pubgi/pubgi/../static
+2018-05-19 18:21:53,825 - INFO - template folder: ../templates
+2018-05-19 18:22:09,649 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:22:10,395 - INFO - Received API request <Response [200]>: took 0.745511 sec
+2018-05-19 18:22:10,397 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=1002c
+2018-05-19 18:22:10,948 - INFO - Received API request <Response [404]>: took 0.551214 sec
+2018-05-19 18:22:10,949 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=1002c
+2018-05-19 18:22:11,223 - INFO - Received API request <Response [404]>: took 0.274322 sec
+2018-05-19 18:22:11,224 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=1002c
+2018-05-19 18:22:11,779 - INFO - Received API request <Response [404]>: took 0.554461 sec
+2018-05-19 18:22:11,779 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=1002c
+2018-05-19 18:22:15,376 - INFO - Received API request <Response [200]>: took 3.596674 sec
+2018-05-19 18:22:15,378 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=1002c
+2018-05-19 18:22:15,586 - INFO - Received API request <Response [404]>: took 0.208065 sec
+2018-05-19 18:22:15,587 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=1002c
+2018-05-19 18:22:15,823 - INFO - Received API request <Response [404]>: took 0.236433 sec
+2018-05-19 18:22:15,824 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=1002c
+2018-05-19 18:22:16,029 - INFO - Received API request <Response [404]>: took 0.205325 sec
+2018-05-19 18:22:30,728 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:22:31,059 - INFO - Received API request <Response [200]>: took 0.330615 sec
+2018-05-19 18:22:31,059 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:22:31,773 - INFO - Received API request <Response [200]>: took 0.713750 sec
+2018-05-19 18:22:31,774 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/8abf7ce0-5d02-43c6-a624-43639ed73e0d
+2018-05-19 18:22:31,797 - INFO - Received API request <Response [200]>: took 0.022987 sec
+2018-05-19 18:22:31,801 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/12/21/f396d10a-55de-11e8-8c04-0a58647c500c-telemetry.json
+2018-05-19 18:22:41,693 - INFO - Received API request <Response [200]>: took 9.891524 sec
+2018-05-19 18:22:52,304 - INFO - Telemetry data added for match <Match '8abf7ce0-5d02-43c6-a624-43639ed73e0d'>
+2018-05-19 18:22:52,348 - INFO - <Record of player 1 in roster 11> with <Match stats 18 18> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:22:52,348 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/0fa285d5-85a8-40ee-901a-db8511afc6f5
+2018-05-19 18:22:52,820 - INFO - Received API request <Response [200]>: took 0.471453 sec
+2018-05-19 18:22:52,825 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/13/25/f7a27062-55e7-11e8-b955-0a58647cc60d-telemetry.json
+2018-05-19 18:23:00,494 - INFO - Received API request <Response [200]>: took 7.669128 sec
+2018-05-19 18:23:09,070 - INFO - Telemetry data added for match <Match '0fa285d5-85a8-40ee-901a-db8511afc6f5'>
+2018-05-19 18:23:09,118 - INFO - <Record of player 1 in roster 12> with <Match stats 19 19> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:23:09,118 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/efdf0f71-0865-4d73-8423-657468c5e003
+2018-05-19 18:23:09,776 - INFO - Received API request <Response [200]>: took 0.658288 sec
+2018-05-19 18:23:09,781 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/14/01/f76b463d-55ec-11e8-a4b0-0a58647d2f02-telemetry.json
+2018-05-19 18:23:18,106 - INFO - Received API request <Response [200]>: took 8.325615 sec
+2018-05-19 18:23:29,534 - INFO - Telemetry data added for match <Match 'efdf0f71-0865-4d73-8423-657468c5e003'>
+2018-05-19 18:23:29,576 - INFO - <Record of player 1 in roster 13> with <Match stats 20 20> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:23:29,577 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/78cc66c2-744d-4a84-98d4-fef536707d68
+2018-05-19 18:23:29,840 - INFO - Received API request <Response [200]>: took 0.263192 sec
+2018-05-19 18:23:29,845 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/14/33/6b2e4e21-55f1-11e8-8e84-0a58647cb60d-telemetry.json
+2018-05-19 18:23:30,487 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:23:31,226 - INFO - Received API request <Response [200]>: took 0.739127 sec
+2018-05-19 18:23:31,226 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=1002c
+2018-05-19 18:23:31,877 - INFO - Received API request <Response [200]>: took 0.650216 sec
+2018-05-19 18:23:31,878 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/78cc66c2-744d-4a84-98d4-fef536707d68
+2018-05-19 18:23:31,900 - INFO - Received API request <Response [200]>: took 0.021931 sec
+2018-05-19 18:23:31,905 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/14/33/6b2e4e21-55f1-11e8-8e84-0a58647cb60d-telemetry.json
+2018-05-19 18:23:36,895 - INFO - Received API request <Response [200]>: took 7.050471 sec
+2018-05-19 18:23:37,504 - INFO - Received API request <Response [200]>: took 5.598988 sec
+2018-05-19 18:23:45,905 - INFO - Telemetry data added for match <Match '78cc66c2-744d-4a84-98d4-fef536707d68'>
+2018-05-19 18:23:45,949 - INFO - <Record of player 1 in roster 14> with <Match stats 21 21> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:23:45,949 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/e4d27c34-7794-4017-8354-4657419d7791
+2018-05-19 18:23:46,291 - INFO - Received API request <Response [200]>: took 0.341652 sec
+2018-05-19 18:23:46,297 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/15/07/3f217d70-55f6-11e8-aba9-0a58647cd00e-telemetry.json
+2018-05-19 18:23:51,584 - INFO - Telemetry data added for match <Match '78cc66c2-744d-4a84-98d4-fef536707d68'>
+2018-05-19 18:23:51,632 - INFO - <Record of player 1 in roster 14> with <Match stats 22 22> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:23:51,633 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/e4d27c34-7794-4017-8354-4657419d7791
+2018-05-19 18:23:51,660 - INFO - Received API request <Response [200]>: took 0.027662 sec
+2018-05-19 18:23:51,667 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/15/07/3f217d70-55f6-11e8-aba9-0a58647cd00e-telemetry.json
+2018-05-19 18:23:54,490 - INFO - Received API request <Response [200]>: took 8.192542 sec
+2018-05-19 18:23:54,492 - INFO - Received API request <Response [200]>: took 2.824200 sec
+2018-05-19 18:24:05,879 - INFO - Telemetry data added for match <Match 'e4d27c34-7794-4017-8354-4657419d7791'>
+2018-05-19 18:24:05,924 - INFO - <Record of player 1 in roster 15> with <Match stats 23 23> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:05,924 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/faf34482-b951-48c3-85d7-f565346340fb
+2018-05-19 18:24:06,497 - INFO - Received API request <Response [200]>: took 0.572362 sec
+2018-05-19 18:24:06,502 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/15/35/0844b1f2-55fa-11e8-84d6-0a58647cd408-telemetry.json
+2018-05-19 18:24:10,111 - INFO - Telemetry data added for match <Match 'e4d27c34-7794-4017-8354-4657419d7791'>
+2018-05-19 18:24:10,156 - INFO - <Record of player 1 in roster 15> with <Match stats 24 24> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:10,156 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/faf34482-b951-48c3-85d7-f565346340fb
+2018-05-19 18:24:10,184 - INFO - Received API request <Response [200]>: took 0.028109 sec
+2018-05-19 18:24:10,188 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/15/35/0844b1f2-55fa-11e8-84d6-0a58647cd408-telemetry.json
+2018-05-19 18:24:13,256 - INFO - Received API request <Response [200]>: took 6.754752 sec
+2018-05-19 18:24:13,258 - INFO - Received API request <Response [200]>: took 3.069107 sec
+2018-05-19 18:24:23,017 - INFO - Telemetry data added for match <Match 'faf34482-b951-48c3-85d7-f565346340fb'>
+2018-05-19 18:24:23,062 - INFO - <Record of player 1 in roster 16> with <Match stats 25 25> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:23,062 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/db4e8a0e-58b5-4894-accb-f6a006cc6642
+2018-05-19 18:24:23,327 - INFO - Received API request <Response [200]>: took 0.264625 sec
+2018-05-19 18:24:23,332 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/16/48/47246e75-5604-11e8-84ae-0a58647cb60f-telemetry.json
+2018-05-19 18:24:26,525 - INFO - Telemetry data added for match <Match 'faf34482-b951-48c3-85d7-f565346340fb'>
+2018-05-19 18:24:26,567 - INFO - <Record of player 1 in roster 16> with <Match stats 26 26> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:26,567 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/db4e8a0e-58b5-4894-accb-f6a006cc6642
+2018-05-19 18:24:26,587 - INFO - Received API request <Response [200]>: took 0.019541 sec
+2018-05-19 18:24:26,591 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/12/16/48/47246e75-5604-11e8-84ae-0a58647cb60f-telemetry.json
+2018-05-19 18:24:29,875 - INFO - Received API request <Response [200]>: took 3.284406 sec
+2018-05-19 18:24:30,517 - INFO - Received API request <Response [200]>: took 7.185168 sec
+2018-05-19 18:24:38,664 - INFO - Telemetry data added for match <Match 'db4e8a0e-58b5-4894-accb-f6a006cc6642'>
+2018-05-19 18:24:38,705 - INFO - <Record of player 1 in roster 17> with <Match stats 27 27> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:38,705 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/0a3cc522-be7d-47ea-933d-909432798365
+2018-05-19 18:24:39,012 - INFO - Received API request <Response [200]>: took 0.306678 sec
+2018-05-19 18:24:39,018 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/07/32/d15e1ff8-567f-11e8-97f9-0a58647d8b05-telemetry.json
+2018-05-19 18:24:42,024 - INFO - Telemetry data added for match <Match 'db4e8a0e-58b5-4894-accb-f6a006cc6642'>
+2018-05-19 18:24:42,087 - INFO - <Record of player 1 in roster 17> with <Match stats 28 28> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:42,088 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/0a3cc522-be7d-47ea-933d-909432798365
+2018-05-19 18:24:42,104 - INFO - Received API request <Response [200]>: took 0.016231 sec
+2018-05-19 18:24:42,109 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/07/32/d15e1ff8-567f-11e8-97f9-0a58647d8b05-telemetry.json
+2018-05-19 18:24:46,690 - INFO - Received API request <Response [200]>: took 4.581542 sec
+2018-05-19 18:24:47,332 - INFO - Received API request <Response [200]>: took 8.313856 sec
+2018-05-19 18:24:56,773 - INFO - Telemetry data added for match <Match '0a3cc522-be7d-47ea-933d-909432798365'>
+2018-05-19 18:24:56,814 - INFO - <Record of player 1 in roster 18> with <Match stats 29 29> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:56,814 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/831d08bc-4db1-4a9d-b022-fc20c47d8c29
+2018-05-19 18:24:56,833 - INFO - Telemetry data added for match <Match '0a3cc522-be7d-47ea-933d-909432798365'>
+2018-05-19 18:24:56,875 - INFO - <Record of player 1 in roster 18> with <Match stats 30 30> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:24:56,875 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/831d08bc-4db1-4a9d-b022-fc20c47d8c29
+2018-05-19 18:24:57,704 - INFO - Received API request <Response [200]>: took 0.829298 sec
+2018-05-19 18:24:57,710 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/08/33/603cea5f-5688-11e8-9e6f-0a58647d8111-telemetry.json
+2018-05-19 18:24:57,784 - INFO - Received API request <Response [200]>: took 0.969530 sec
+2018-05-19 18:24:57,790 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/08/33/603cea5f-5688-11e8-9e6f-0a58647d8111-telemetry.json
+2018-05-19 18:25:05,089 - INFO - Received API request <Response [200]>: took 7.379045 sec
+2018-05-19 18:25:05,805 - INFO - Received API request <Response [200]>: took 8.015018 sec
+2018-05-19 18:25:11,768 - INFO - Telemetry data added for match <Match '831d08bc-4db1-4a9d-b022-fc20c47d8c29'>
+2018-05-19 18:25:11,810 - INFO - Telemetry data added for match <Match '831d08bc-4db1-4a9d-b022-fc20c47d8c29'>
+2018-05-19 18:25:11,818 - INFO - <Record of player 1 in roster 19> with <Match stats 31 31> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:11,818 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/a07b087d-c747-4fe7-9c7f-b83680521d92
+2018-05-19 18:25:11,865 - INFO - <Record of player 1 in roster 19> with <Match stats 32 32> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:11,865 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/a07b087d-c747-4fe7-9c7f-b83680521d92
+2018-05-19 18:25:12,192 - INFO - Received API request <Response [200]>: took 0.327166 sec
+2018-05-19 18:25:12,197 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/09/21/0792aa16-568f-11e8-97ef-0a58647d9903-telemetry.json
+2018-05-19 18:25:12,285 - INFO - Received API request <Response [200]>: took 0.466795 sec
+2018-05-19 18:25:12,290 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/09/21/0792aa16-568f-11e8-97ef-0a58647d9903-telemetry.json
+2018-05-19 18:25:19,450 - INFO - Received API request <Response [200]>: took 7.159074 sec
+2018-05-19 18:25:19,454 - INFO - Received API request <Response [200]>: took 7.256732 sec
+2018-05-19 18:25:29,060 - INFO - Telemetry data added for match <Match 'a07b087d-c747-4fe7-9c7f-b83680521d92'>
+2018-05-19 18:25:29,105 - INFO - <Record of player 1 in roster 20> with <Match stats 33 33> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:29,105 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/db3d8eb3-b6d0-4525-b3f1-e785bc2adbce
+2018-05-19 18:25:29,531 - INFO - Received API request <Response [200]>: took 0.426189 sec
+2018-05-19 18:25:29,537 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/10/59/ad83e0f8-569c-11e8-a27b-0a58647d8506-telemetry.json
+2018-05-19 18:25:32,278 - INFO - Telemetry data added for match <Match 'a07b087d-c747-4fe7-9c7f-b83680521d92'>
+2018-05-19 18:25:32,321 - INFO - <Record of player 1 in roster 20> with <Match stats 34 34> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:32,321 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/db3d8eb3-b6d0-4525-b3f1-e785bc2adbce
+2018-05-19 18:25:32,344 - INFO - Received API request <Response [200]>: took 0.022800 sec
+2018-05-19 18:25:32,348 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/10/59/ad83e0f8-569c-11e8-a27b-0a58647d8506-telemetry.json
+2018-05-19 18:25:36,555 - INFO - Received API request <Response [200]>: took 7.017847 sec
+2018-05-19 18:25:36,556 - INFO - Received API request <Response [200]>: took 4.207871 sec
+2018-05-19 18:25:43,478 - INFO - Telemetry data added for match <Match 'db3d8eb3-b6d0-4525-b3f1-e785bc2adbce'>
+2018-05-19 18:25:43,527 - INFO - <Record of player 1 in roster 21> with <Match stats 35 35> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:43,527 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/7eef59f0-33fa-4336-a944-b63fd0cbf124
+2018-05-19 18:25:43,656 - INFO - Telemetry data added for match <Match 'db3d8eb3-b6d0-4525-b3f1-e785bc2adbce'>
+2018-05-19 18:25:43,699 - INFO - <Record of player 1 in roster 21> with <Match stats 36 36> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:43,700 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/7eef59f0-33fa-4336-a944-b63fd0cbf124
+2018-05-19 18:25:43,893 - INFO - Received API request <Response [200]>: took 0.365734 sec
+2018-05-19 18:25:43,898 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/11/32/60462e4f-56a1-11e8-a47e-0a58647d8702-telemetry.json
+2018-05-19 18:25:43,980 - INFO - Received API request <Response [200]>: took 0.279975 sec
+2018-05-19 18:25:43,984 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/11/32/60462e4f-56a1-11e8-a47e-0a58647d8702-telemetry.json
+2018-05-19 18:25:51,570 - INFO - Received API request <Response [200]>: took 7.585872 sec
+2018-05-19 18:25:51,581 - INFO - Received API request <Response [200]>: took 7.682361 sec
+2018-05-19 18:25:59,298 - INFO - Telemetry data added for match <Match '7eef59f0-33fa-4336-a944-b63fd0cbf124'>
+2018-05-19 18:25:59,341 - INFO - <Record of player 1 in roster 22> with <Match stats 37 37> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:59,383 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/e73e0240-3a2f-4b88-b762-829be2f3cafd
+2018-05-19 18:25:59,447 - INFO - Telemetry data added for match <Match '7eef59f0-33fa-4336-a944-b63fd0cbf124'>
+2018-05-19 18:25:59,490 - INFO - <Record of player 1 in roster 22> with <Match stats 38 38> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:25:59,491 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/e73e0240-3a2f-4b88-b762-829be2f3cafd
+2018-05-19 18:25:59,727 - INFO - Received API request <Response [200]>: took 0.343730 sec
+2018-05-19 18:25:59,732 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/06/00b62d44-56a6-11e8-b4c7-0a58647d8704-telemetry.json
+2018-05-19 18:26:00,285 - INFO - Received API request <Response [200]>: took 0.794021 sec
+2018-05-19 18:26:00,290 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/06/00b62d44-56a6-11e8-b4c7-0a58647d8704-telemetry.json
+2018-05-19 18:26:07,098 - INFO - Received API request <Response [200]>: took 7.366392 sec
+2018-05-19 18:26:08,097 - INFO - Received API request <Response [200]>: took 7.806596 sec
+2018-05-19 18:26:13,299 - INFO - Telemetry data added for match <Match 'e73e0240-3a2f-4b88-b762-829be2f3cafd'>
+2018-05-19 18:26:13,385 - INFO - <Record of player 1 in roster 23> with <Match stats 39 39> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:13,385 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/6987a68c-71b2-44e1-8255-0c58d459b0cd
+2018-05-19 18:26:13,754 - INFO - Received API request <Response [200]>: took 0.368778 sec
+2018-05-19 18:26:13,759 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/27/f0d1e158-56a8-11e8-b29a-0a58647afd02-telemetry.json
+2018-05-19 18:26:13,957 - INFO - Telemetry data added for match <Match 'e73e0240-3a2f-4b88-b762-829be2f3cafd'>
+2018-05-19 18:26:14,004 - INFO - <Record of player 1 in roster 23> with <Match stats 40 40> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:14,004 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/6987a68c-71b2-44e1-8255-0c58d459b0cd
+2018-05-19 18:26:14,028 - INFO - Received API request <Response [200]>: took 0.023556 sec
+2018-05-19 18:26:14,032 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/27/f0d1e158-56a8-11e8-b29a-0a58647afd02-telemetry.json
+2018-05-19 18:26:21,183 - INFO - Received API request <Response [200]>: took 7.424515 sec
+2018-05-19 18:26:21,188 - INFO - Received API request <Response [200]>: took 7.155637 sec
+2018-05-19 18:26:30,542 - INFO - Telemetry data added for match <Match '6987a68c-71b2-44e1-8255-0c58d459b0cd'>
+2018-05-19 18:26:30,583 - INFO - <Record of player 1 in roster 24> with <Match stats 41 41> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:30,583 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/963ebcc2-25fc-4cf5-b1ec-dff839375dd0
+2018-05-19 18:26:30,887 - INFO - Received API request <Response [200]>: took 0.303949 sec
+2018-05-19 18:26:30,893 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/43/4d2eb4f7-56ab-11e8-89ce-0a58647d6109-telemetry.json
+2018-05-19 18:26:34,388 - INFO - Telemetry data added for match <Match '6987a68c-71b2-44e1-8255-0c58d459b0cd'>
+2018-05-19 18:26:34,503 - INFO - <Record of player 1 in roster 24> with <Match stats 42 42> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:34,503 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/963ebcc2-25fc-4cf5-b1ec-dff839375dd0
+2018-05-19 18:26:34,531 - INFO - Received API request <Response [200]>: took 0.027592 sec
+2018-05-19 18:26:34,536 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/12/43/4d2eb4f7-56ab-11e8-89ce-0a58647d6109-telemetry.json
+2018-05-19 18:26:38,328 - INFO - Received API request <Response [200]>: took 3.792070 sec
+2018-05-19 18:26:38,329 - INFO - Received API request <Response [200]>: took 7.435805 sec
+2018-05-19 18:26:45,013 - INFO - Telemetry data added for match <Match '963ebcc2-25fc-4cf5-b1ec-dff839375dd0'>
+2018-05-19 18:26:45,102 - INFO - <Record of player 1 in roster 25> with <Match stats 43 43> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:45,102 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/030fd913-b477-47d5-96ec-2a20ee19ad1b
+2018-05-19 18:26:45,349 - INFO - Received API request <Response [200]>: took 0.247064 sec
+2018-05-19 18:26:45,355 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/13/22/b8e59430-56b0-11e8-bf08-0a58647d8706-telemetry.json
+2018-05-19 18:26:45,890 - INFO - Telemetry data added for match <Match '963ebcc2-25fc-4cf5-b1ec-dff839375dd0'>
+2018-05-19 18:26:45,986 - INFO - <Record of player 1 in roster 25> with <Match stats 44 44> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:45,987 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/030fd913-b477-47d5-96ec-2a20ee19ad1b
+2018-05-19 18:26:46,011 - INFO - Received API request <Response [200]>: took 0.024189 sec
+2018-05-19 18:26:46,016 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/13/22/b8e59430-56b0-11e8-bf08-0a58647d8706-telemetry.json
+2018-05-19 18:26:52,567 - INFO - Received API request <Response [200]>: took 6.550107 sec
+2018-05-19 18:26:53,302 - INFO - Received API request <Response [200]>: took 7.947166 sec
+2018-05-19 18:26:59,736 - INFO - Telemetry data added for match <Match '030fd913-b477-47d5-96ec-2a20ee19ad1b'>
+2018-05-19 18:26:59,785 - INFO - Telemetry data added for match <Match '030fd913-b477-47d5-96ec-2a20ee19ad1b'>
+2018-05-19 18:26:59,794 - INFO - <Record of player 1 in roster 26> with <Match stats 45 45> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:59,795 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/df515d7c-a33a-45c1-b585-b67e04cb1203
+2018-05-19 18:26:59,840 - INFO - <Record of player 1 in roster 26> with <Match stats 46 46> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:26:59,840 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/df515d7c-a33a-45c1-b585-b67e04cb1203
+2018-05-19 18:27:00,118 - INFO - Received API request <Response [200]>: took 0.322551 sec
+2018-05-19 18:27:00,123 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/13/52/dedc006c-56b4-11e8-a683-0a58647afd04-telemetry.json
+2018-05-19 18:27:00,613 - INFO - Received API request <Response [200]>: took 0.772648 sec
+2018-05-19 18:27:00,618 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/13/52/dedc006c-56b4-11e8-a683-0a58647afd04-telemetry.json
+2018-05-19 18:27:06,993 - INFO - Received API request <Response [200]>: took 6.869532 sec
+2018-05-19 18:27:08,028 - INFO - Received API request <Response [200]>: took 7.409587 sec
+2018-05-19 18:27:13,574 - INFO - Telemetry data added for match <Match 'df515d7c-a33a-45c1-b585-b67e04cb1203'>
+2018-05-19 18:27:13,615 - INFO - <Record of player 1 in roster 27> with <Match stats 47 47> added to <Player '1002c' 'pc-krjp'>
+2018-05-19 18:27:13,615 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/matches/f25cde36-8638-43f6-8a58-a708263b8b74
+2018-05-19 18:27:13,725 - ERROR - quota exceeded
+2018-05-19 18:27:14,074 - INFO - Received API request <Response [200]>: took 0.458457 sec
+2018-05-19 18:27:14,080 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-krjp/2018/05/13/14/56/c56d8a0f-56bd-11e8-82b4-0a58647d610b-telemetry.json
+2018-05-19 18:27:21,365 - INFO - Received API request <Response [200]>: took 7.284977 sec
+2018-05-19 18:27:26,031 - ERROR - quota exceeded
