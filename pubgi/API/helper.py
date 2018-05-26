@@ -271,6 +271,17 @@ def getTelemetry(url):
     
     return result
 
+def filterTelemetry(telemetry, filters):
+    try:
+        filter_telemetry = [data for data in telemetry
+                for filter in filters if data['_T'] == filter]
+        Log.info("Filtered Telemetry Data : " + filter_telemetry.__repr__())
+
+    except Exception as e:
+        raise e
+
+    return filter_telemetry
+
 shardDict = {
     'pc-kakao' : Shard.PC_KAKAO,
     'pc-krjp' : Shard.PC_KRJP,
@@ -280,4 +291,6 @@ shardDict = {
     'pc-oc' : Shard.PC_OC,
     'pc-sea' : Shard.PC_SEA,
     'pc-sa' : Shard.PC_SA,
+    'pc-ru' : Shard.PC_RU,
+    'pc-jp' : Shard.PC_JP
 }

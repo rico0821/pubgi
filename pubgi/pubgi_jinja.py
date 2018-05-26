@@ -142,14 +142,14 @@ def grade(stats):
     
     """
     
-    battle_stats = stats.kill + stats.dbno
+    battle_stats = stats.kills + stats.dBNOs
     survive_stats = stats.timeSurvived
     try:
         mobility_stats = stats.rideDistance / stats.walkDistance
     except:
         mobility_stats = 0
-    support_stats = stats.assist + stats.revive
-    supply_stats = stats.boost + stats.heal + stats.weapon
+    support_stats = stats.assists + stats.revives
+    supply_stats = stats.boosts + stats.heals + stats.weapons
     
     if hasattr(stats, 'game'):
         battle_stats = battle_stats / max(1,(stats.game))

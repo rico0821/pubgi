@@ -23,11 +23,11 @@ class Player(Base):
     
     id = Column(Integer, primary_key=True)
     name = Column(String(50), nullable=False)
-    pubg_id = Column(String(50), nullable=False)
+    pubgID = Column(String(50), nullable=False)
     region = Column(String(30), nullable=False)
-    update_time = Column(DateTime, default=datetime.utcnow()-timedelta(minutes=1))
+    updateTime = Column(DateTime, default=datetime.utcnow() - timedelta(minutes=1))
     
-    event_games = Column(Integer, default=0)
+    eventGames = Column(Integer, default=0)
     
     records = relationship('Record',
                             cascade='delete',
@@ -42,10 +42,10 @@ class Player(Base):
                               cascade='delete',
                               backref='player')
     
-    def __init__(self, name, pubg_id, region):
+    def __init__(self, name, pubgID, region):
         
         self.name = name
-        self.pubg_id = pubg_id
+        self.pubgID = pubgID
         self.region = region
         
     def __repr__(self):
@@ -57,28 +57,28 @@ class PlayerStats(Base):
     __tablename__ = 'player_stats'
     
     id = Column(Integer, primary_key=True)
-    player_id = Column(Integer, ForeignKey(Player.id))
+    playerID = Column(Integer, ForeignKey(Player.id))
     
-    game_type = Column(String(32), nullable=False)
+    gameType = Column(String(32), nullable=False)
     season = Column(Integer, nullable=False)
     
-    game = Column(Integer, default=0)
+    games = Column(Integer, default=0)
     rating = Column(Float, default=0)
     place = Column(Float, default=0)
     top10 = Column(Float, default=0)
     win = Column(Float, default=0)
-    winPoint = Column(Float, default=0)
-    killPoint = Column(Float, default=0)
-    lastwinPoint = Column(Float, default=0)
+    winPoints = Column(Float, default=0)
+    killPoints = Column(Float, default=0)
+    lastwinPoints = Column(Float, default=0)
     lastkillPoints = Column(Float, default=0)
     
     damage = Column(Float, default=0)
-    dbno = Column(Integer, default=0)
-    kill = Column(Integer, default=0)
-    headshot = Column(Integer, default=0)
-    roadKill = Column(Integer, default=0)
-    teamKill = Column(Integer, default=0)
-    vehicleDestroyed = Column(Integer, default=0)
+    dBNOs = Column(Integer, default=0)
+    kills = Column(Integer, default=0)
+    headshotKills = Column(Integer, default=0)
+    roadKills = Column(Integer, default=0)
+    teamKills = Column(Integer, default=0)
+    vehicleDestroys = Column(Integer, default=0)
     
     death = Column(Integer, default=0)
     timeSurvived = Column(Float, default=0)
@@ -86,44 +86,44 @@ class PlayerStats(Base):
     walkDistance = Column(Float, default=0)
     rideDistance = Column(Float, default=0)
     
-    boost = Column(Integer, default=0)
-    heal = Column(Integer, default=0)
-    weapon = Column(Integer, default=0)
+    boosts = Column(Integer, default=0)
+    heals = Column(Integer, default=0)
+    weapons = Column(Integer, default=0)
     
-    revive = Column(Integer, default=0)
-    assist = Column(Integer, default=0)
+    revives = Column(Integer, default=0)
+    assists = Column(Integer, default=0)
     
-    __mapper_args__ = {'polymorphic_on': game_type}
+    __mapper_args__ = {'polymorphic_on': gameType}
     
-    def __init__(self, game_type, season):
+    def __init__(self, gameType, season):
         
-        self.game_type = game_type
+        self.gameType = gameType
         self.season = season
         
     def aggregate(self, stats):
         
-        self.game += 1
-        self.lastwinPoint = stats['winPoints']
-        self.lastkillPoint = stats['killPoints']
-        self.winPoint = self.lastwinPoint + stats['winPointsDelta']
-        self.killPoint = self.lastkillPoint + stats['killPointsDelta']
-        self.rating = self.winPoint + 0.2 * self.killPoint
+        self.games += 1
+        self.lastwinPoints = stats['winPoints']
+        self.lastkillPoints = stats['killPoints']
+        self.winPoints = self.lastwinPoints + stats['winPointsDelta']
+        self.killPoints = self.lastkillPoints + stats['killPointsDelta']
+        self.rating = self.winPoints + 0.2 * self.killPoints
         self.place += stats['winPlace']
         self.damage += stats['damageDealt']
-        self.kill += stats['kills']
-        self.headshot += stats['headshotKills']
-        self.assist += stats['assists']
-        self.roadKill += stats['roadKills']
-        self.vehicleDestroyed += stats['vehicleDestroys']
-        self.dbno += stats['DBNOs']
+        self.kills += stats['kills']
+        self.headshotKills += stats['headshotKills']
+        self.assists += stats['assists']
+        self.roadKills += stats['roadKills']
+        self.vehicleDestroys += stats['vehicleDestroys']
+        self.dBNOs += stats['DBNOs']
         self.timeSurvived += stats['timeSurvived']
         self.walkDistance += stats['walkDistance'] 
         self.rideDistance += stats['rideDistance']
-        self.boost += stats['boosts']
-        self.heal += stats['heals'] 
-        self.weapon += stats['weaponsAcquired']
-        self.revive += stats['revives']    
-        self.teamKill += stats['teamKills']
+        self.boosts += stats['boosts']
+        self.heals += stats['heals']
+        self.weapons += stats['weaponsAcquired']
+        self.revives += stats['revives']
+        self.teamKills += stats['teamKills']
         
         if not stats['deathType'] == 'alive':
             self.death += 1
@@ -142,7 +142,7 @@ class SoloStats(PlayerStats):
         super().__init__('solo', season)
         
     def __repr__(self):
-        return '<Player solo stats %r %r>' % (self.id, self.player_id)
+        return '<Player solo stats %r %r>' % (self.id, self.playerID)
     
     
 class DuoStats(PlayerStats):
@@ -153,7 +153,7 @@ class DuoStats(PlayerStats):
         super().__init__('duo', season)
         
     def __repr__(self):
-        return '<Player duo stats %r %r>' % (self.id, self.player_id)
+        return '<Player duo stats %r %r>' % (self.id, self.playerID)
     
     
 class SquadStats(PlayerStats):
@@ -164,4 +164,4 @@ class SquadStats(PlayerStats):
         super().__init__('squad', season)
         
     def __repr__(self):
-        return '<Player squad stats %r %r>' % (self.id, self.player_id)
+        return '<Player squad stats %r %r>' % (self.id, self.playerID)

@@ -157,13 +157,13 @@
                        place_markers(type);
                    } else {
                        bootbox.alert("데이터 불러오기에 실패하였습니다. 잠시 후 다시 시도해주세요.", function() {
-                           $(location).attr('href',"{{ url_for('pubg.show_map') }}");
+                           $(location).attr('href',"{{ url_for('pubgi.show_map') }}");
                        });
                    }
                  }
                ,error: function(result) {
                        bootbox.alert("서버에 문제가 발생했습니다. 잠시 후 다시 시도해주세요.", function() {
-                           $(location).attr('href',"{{ url_for('pubg.show_map') }}");
+                           $(location).attr('href',"{{ url_for('pubgi.show_map') }}");
                        });
                  }
             });

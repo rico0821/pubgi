@@ -1,5 +1,84 @@
 {% extends "layout.html" %}
 {% block title %}리더보드{% endblock %}
-{% block head %}{{ super() }}{% endblock %}
+{% block head %}
+{{ super() }}
+<!--plugin for table sorting -->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
+{% endblock %}
 {% block content %}
+<div class="region-select mt-5">
+    <h2>지역 선택</h2>
+    <div class="btn-group">
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-krjp')"> <span class="black-text">KR</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-as')">AS</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-jp')"><span class="black-text">JP</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-kakao')">KAKAO </button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-na')"><span class="black-text">NA</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-sa')">SA</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-eu')"><span class="black-text">EU</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-oc')">OC</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-sea')"><span class="black-text">SEA</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-ru')">RU</button>
+    </div>
+</div>
+<div class="mode-select mt-5">
+    <h2>모드 선택</h2>
+    <div class="btn-group">
+        <button class="btn btn-light" type="button" onclick="javascript:change_mode('solo')"> <span class="black-text">솔로</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_mode('duo')"> 듀오 </button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_mode('squad')"> <span class="black-text">스쿼드</span></button>
+    </div>
+</div>
+<table id="leaderboard" class="table table-responsive-md mt-5 table-striped">
+    <!-- table head -->
+    <thead class="bg-warning">
+        <tr>
+          <th class="table-head">순위<i class="fas fa-caret-down"></i></th>
+            <th class="th-sm">닉네임</th>
+            <th class="th-sm">레이팅</th>
+            <th class="th-sm table-head">승률<i class="fas fa-caret-down"></i></th>
+            <th class="th-sm table-head">TOP10률<i class="fas fa-caret-down"></i></th>
+            <th class="th-sm table-head">K/D<i class="fas fa-caret-down"></i></th>
+            <th class="th-sm table-head">데미지<i class="fas fa-caret-down"></i></th>
+            <th class="th-sm table-head">평균 등수<i class="fas fa-caret-down"></i></th>
+        </tr>
+    </thead>
+    <!-- end of table head-->
+    <!-- table body -->
+    <tbody>
+        {% for leader in leaders %}
+        <tr>
+            <th scope="row">{{ loop.index }}</th>
+            <td>{{ leader.player.name }}</td>
+            <td>{{ leader.rating | int }}</td>
+            <td>{{ (leader.top10 / leader.games * 100) | round(1) }}%</td>
+            <td>{{ (leader.win / leader.games * 100) | round(1) }}%</td>
+            <td>{{ (leader.kills / leader.death) | round(2) }}</td>
+            <td>{{ (leader.damage / leader.games) | int }}</td>
+            <td>{{ (leader.place / leader.games) | round(1) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+<!-- table body -->
+</table>
+<!-- table sorting script -->
+<script type="text/javascript">
+    $(function() {
+        $("#leaderboard").tablesorter();
+    });
+    
+    var mode = "{{ mode }}"; 
+    var region = "{{ region }}"; 
+    
+    function change_mode(mode) {
+        mode = mode;
+        window.location = "{{ url_for('pubgi.show_leaderboard') }}" + '?' + 'mode=' + mode + '&region=' + region;
+    }
+    
+    function change_region(region) {
+        region = region;
+        window.location = "{{ url_for('pubgi.show_leaderboard') }}" + '?' + 'mode=' + mode + '&region=' + region;
+    }
+ 
+</script>
 {% endblock %}

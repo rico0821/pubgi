@@ -43,7 +43,7 @@ class pubgiConfig:
     # PUBG API
     UPDATE_WAIT_TIME = 60
     API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxOWEyNjE3MC0xOWU2LTAxMzYtYzUzYS0yZmZkMzhmZDU3ZmYiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNTIyODEyNDgwLCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6InN0YXRlciIsInNjb3BlIjoiY29tbXVuaXR5IiwibGltaXQiOjEwfQ.OT3XhJ7NY0TKvl7ObhaFhdumc0Fy_P_dhEH2N65MmRE'
-    REGIONS = ['pc-krjp', 'pc-kakao', 'pc-sea', 'pc-sa', 'pc-as', 'pc-na', 'pc-eu', 'pc-oc']
+    REGIONS = ['pc-krjp', 'pc-jp', 'pc-kakao', 'pc-sea', 'pc-sa', 'pc-as', 'pc-na', 'pc-eu', 'pc-oc', 'pc-ru']
     
     # Season
     CURRENT_SEASON = 5

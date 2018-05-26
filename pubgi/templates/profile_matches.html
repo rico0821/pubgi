@@ -90,15 +90,15 @@
                                     <td>{{ record.roster.match.info.mapName | translate_map }}</td>
                                     <td>#{{ record.stats.place }}</td>
                                     <td>{{ (record.stats.timeSurvived / 60) | int}} 분 {{ (record.stats.timeSurvived % 60) | int }}초</td>
-                                    {% if record.stats.winPointDelta > 0 %}
-                                    <td class="green-text">+{{ record.stats.winPointDelta | int }}</td>
+                                    {% if record.stats.winPointsDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.winPointsDelta | int }}</td>
                                     {% else %}
-                                    <td class="red-text">{{ record.stats.winPointDelta | int }}</td>
+                                    <td class="red-text">{{ record.stats.winPointsDelta | int }}</td>
                                     {% endif %}
-                                    {% if record.stats.killPointDelta > 0 %}
-                                    <td class="green-text">+{{ record.stats.killPointDelta | int }}</td>
+                                    {% if record.stats.killPointsDelta > 0 %}
+                                    <td class="green-text">+{{ record.stats.killPointsDelta | int }}</td>
                                     {% else %}
-                                    <td class="red-text">{{ record.stats.killPointDelta | int }}</td>
+                                    <td class="red-text">{{ record.stats.killPointsDelta | int }}</td>
                                     {% endif %}
                                 </tr>
                                 <!-- end of player data -->
