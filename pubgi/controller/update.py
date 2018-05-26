@@ -109,23 +109,16 @@ def update(player_id):
                         
                         telemetry_data = getTelemetry(data[4])
                         tele_exist = mongo.db.matches.find_one({'matchID' : pubg_match_id})
-<<<<<<< HEAD
+
                         """
                         if not tele_exist:
                             filter_tele = filterTelemetry(telemetry_data, ["LogItemPickup", "LogPlayerPosition", "LogGameStatePeriodic", "LogPlayerKill"])
-=======
-
-                        if not tele_exist:
->>>>>>> 160f4e803a7e87b7a5891abf0a19609302e55c66
                             mongo.db.matches.insert({'matchID' : pubg_match_id, 
                                                               'map' : match_info.mapName,
                                                               'data' : telemetry_data})
                             Log.info('Telemetry data added for match %r' % match_exist)
-<<<<<<< HEAD
+
                         """
-=======
-                        
->>>>>>> 160f4e803a7e87b7a5891abf0a19609302e55c66
                     roster = dao.query(Roster).filter_by(pubgRosterID=data[3]).first()
 
                     if not roster:
