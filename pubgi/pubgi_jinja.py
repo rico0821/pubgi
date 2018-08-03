@@ -59,6 +59,7 @@ def translate_map(name):
     dic = {
         'Erangel_Main' : '에란겔',
         'Desert_Main' : '미라마',
+        'Savage_Main' : '새비지',
         'N/A' : 'N/A'
     }
     

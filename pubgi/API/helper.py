@@ -226,7 +226,11 @@ def getPlayerStats(region, player, api_key, last_match_id):
     
     try:
         if last_match_id:
-            upto = match_ids.index(last_match_id) + 1
+            try:
+                upto = match_ids.index(last_match_id) + 1
+            except:
+                upto = 0
+                Log.error('Something went wrong with finding match index.')
         else: 
             upto = 0
             Log.info('No recent matches were recorded for player %r [region: %r]' % (player, region))
