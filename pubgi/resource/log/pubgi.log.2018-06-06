@@ -1,0 +1,15 @@
+2018-06-06 09:26:35,374 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-06 09:26:35,387 - INFO - template folder: ../templates
+2018-06-06 09:26:38,521 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-06 09:26:38,521 - INFO - template folder: ../templates
+2018-06-06 09:26:55,034 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fin
+2018-06-06 09:26:55,556 - INFO - Received API request <Response [429]>: took 0.521612 sec
+2018-06-06 09:26:55,557 - ERROR - 'NoneType' object is not subscriptable
+2018-06-06 09:27:02,409 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-06 09:27:02,726 - INFO - Received API request <Response [429]>: took 0.315907 sec
+2018-06-06 09:27:02,726 - ERROR - 'NoneType' object is not subscriptable
+2018-06-06 09:27:05,079 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-06 09:27:05,222 - INFO - Received API request <Response [429]>: took 0.142658 sec
+2018-06-06 09:27:05,222 - ERROR - 'NoneType' object is not subscriptable
+2018-06-06 09:27:05,222 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-06 09:27:05,446 - INFO - Received API request <Response [429]>: took 0.222893 sec

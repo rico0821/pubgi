@@ -53,11 +53,11 @@ def _getRequest(region, query_type, query_filter, query, api_key):
         start_time = time.time()
         result = requests.get(url, headers=headers)
         Log.info('Received API request %r: took %f sec' % (result, time.time()-start_time))
-        if result:
-            result = result.json()
+        result = result.json()
         
     except Exception as e:
-        raise e
+        
+        result = None
     
     return result
     
@@ -84,14 +84,12 @@ def _processPlayerId(data):
     
     """
     
-    if 'data' in data:
-        try:
-            player_id = data['data'][0]['id']
-            
-        except Exception as e:
-            raise e
-    else:
-        return False
+    try:
+        player_id = data['data'][0]['id']
+
+    except Exception as e:
+        Log.error(str(e))
+        player_id = None
     
     return player_id
 
@@ -107,7 +105,7 @@ def _processMatchIds(data):
         for match in reversed(matches):
             yield match['id']
         else:
-            return False
+            return None
 
     except Exception as e:
         raise e
@@ -275,7 +273,6 @@ def filterTelemetry(telemetry, filters):
     try:
         filter_telemetry = [data for data in telemetry
                 for filter in filters if data['_T'] == filter]
-        Log.info("Filtered Telemetry Data : " + filter_telemetry.__repr__())
 
     except Exception as e:
         raise e

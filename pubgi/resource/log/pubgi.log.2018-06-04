@@ -1,0 +1,99 @@
+2018-06-04 10:42:49,877 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:42:49,888 - INFO - template folder: ../templates
+2018-06-04 10:42:52,884 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:42:52,884 - INFO - template folder: ../templates
+2018-06-04 10:49:56,081 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:49:56,081 - INFO - template folder: ../templates
+2018-06-04 10:50:24,539 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=df
+2018-06-04 10:50:25,148 - INFO - Received API request <Response [404]>: took 0.608247 sec
+2018-06-04 10:50:25,149 - ERROR - 'data'
+2018-06-04 10:50:25,149 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-jp/players?filter[playerNames]=df
+2018-06-04 10:50:25,383 - INFO - Received API request <Response [404]>: took 0.234201 sec
+2018-06-04 10:50:25,384 - ERROR - 'data'
+2018-06-04 10:50:25,384 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=df
+2018-06-04 10:50:25,647 - INFO - Received API request <Response [404]>: took 0.263131 sec
+2018-06-04 10:50:25,649 - ERROR - 'data'
+2018-06-04 10:50:25,649 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=df
+2018-06-04 10:50:25,891 - INFO - Received API request <Response [404]>: took 0.238176 sec
+2018-06-04 10:50:25,892 - ERROR - 'data'
+2018-06-04 10:50:25,892 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=df
+2018-06-04 10:50:26,135 - INFO - Received API request <Response [404]>: took 0.242892 sec
+2018-06-04 10:50:26,136 - ERROR - 'data'
+2018-06-04 10:50:26,136 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=df
+2018-06-04 10:50:26,359 - INFO - Received API request <Response [404]>: took 0.222609 sec
+2018-06-04 10:50:26,359 - ERROR - 'data'
+2018-06-04 10:50:26,359 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=df
+2018-06-04 10:50:26,613 - INFO - Received API request <Response [404]>: took 0.253666 sec
+2018-06-04 10:50:26,614 - ERROR - 'data'
+2018-06-04 10:50:26,614 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=df
+2018-06-04 10:50:26,867 - INFO - Received API request <Response [404]>: took 0.253021 sec
+2018-06-04 10:50:26,868 - ERROR - 'data'
+2018-06-04 10:50:26,868 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=df
+2018-06-04 10:50:27,081 - INFO - Received API request <Response [404]>: took 0.212983 sec
+2018-06-04 10:50:27,082 - ERROR - 'data'
+2018-06-04 10:50:27,082 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-ru/players?filter[playerNames]=df
+2018-06-04 10:50:27,284 - INFO - Received API request <Response [404]>: took 0.201891 sec
+2018-06-04 10:50:27,284 - ERROR - 'data'
+2018-06-04 10:51:25,718 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:51:25,719 - INFO - template folder: ../templates
+2018-06-04 10:51:27,525 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:51:27,526 - INFO - template folder: ../templates
+2018-06-04 10:51:35,497 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-krjp/players?filter[playerNames]=df
+2018-06-04 10:51:35,766 - INFO - Received API request <Response [404]>: took 0.269237 sec
+2018-06-04 10:51:35,767 - ERROR - 'data'
+2018-06-04 10:51:35,767 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-jp/players?filter[playerNames]=df
+2018-06-04 10:51:35,988 - INFO - Received API request <Response [404]>: took 0.220945 sec
+2018-06-04 10:51:35,989 - ERROR - 'data'
+2018-06-04 10:51:35,989 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=df
+2018-06-04 10:51:36,222 - INFO - Received API request <Response [404]>: took 0.232603 sec
+2018-06-04 10:51:36,222 - ERROR - 'data'
+2018-06-04 10:51:36,222 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sea/players?filter[playerNames]=df
+2018-06-04 10:51:36,464 - INFO - Received API request <Response [404]>: took 0.241149 sec
+2018-06-04 10:51:36,464 - ERROR - 'data'
+2018-06-04 10:51:36,464 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-sa/players?filter[playerNames]=df
+2018-06-04 10:51:36,667 - INFO - Received API request <Response [404]>: took 0.202632 sec
+2018-06-04 10:51:36,667 - ERROR - 'data'
+2018-06-04 10:51:36,668 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-as/players?filter[playerNames]=df
+2018-06-04 10:51:36,903 - INFO - Received API request <Response [404]>: took 0.234627 sec
+2018-06-04 10:51:36,903 - ERROR - 'data'
+2018-06-04 10:51:36,903 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-na/players?filter[playerNames]=df
+2018-06-04 10:51:37,243 - INFO - Received API request <Response [404]>: took 0.339849 sec
+2018-06-04 10:51:37,244 - ERROR - 'data'
+2018-06-04 10:51:37,244 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-eu/players?filter[playerNames]=df
+2018-06-04 10:51:37,464 - INFO - Received API request <Response [404]>: took 0.220268 sec
+2018-06-04 10:51:37,465 - ERROR - 'data'
+2018-06-04 10:51:37,465 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-oc/players?filter[playerNames]=df
+2018-06-04 10:51:37,689 - INFO - Received API request <Response [404]>: took 0.223639 sec
+2018-06-04 10:51:37,691 - ERROR - 'data'
+2018-06-04 10:51:37,691 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-ru/players?filter[playerNames]=df
+2018-06-04 10:51:37,936 - INFO - Received API request <Response [404]>: took 0.244988 sec
+2018-06-04 10:51:37,936 - ERROR - 'data'
+2018-06-04 10:52:31,710 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:52:31,710 - INFO - template folder: ../templates
+2018-06-04 10:52:46,281 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-04 10:52:46,656 - INFO - Received API request <Response [200]>: took 0.374329 sec
+2018-06-04 10:52:46,755 - INFO - New player <Player 'fine_temporis' 'pc-kakao'> added.
+2018-06-04 10:52:50,025 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-04 10:52:50,288 - INFO - Received API request <Response [200]>: took 0.261950 sec
+2018-06-04 10:52:50,288 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/players?filter[playerNames]=fine_temporis
+2018-06-04 10:52:50,578 - INFO - Received API request <Response [200]>: took 0.289918 sec
+2018-06-04 10:52:50,579 - INFO - No recent matches were recorded for player 'fine_temporis' [region: 'pc-kakao']
+2018-06-04 10:52:50,579 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/matches/af7deeb7-f2b8-4d0e-babd-6dfe60d49c9d
+2018-06-04 10:52:50,947 - INFO - Received API request <Response [200]>: took 0.367738 sec
+2018-06-04 10:52:50,984 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-kakao/2018/06/01/06/28/ffa32663-6564-11e8-81f1-0a5864647c19-telemetry.json
+2018-06-04 10:52:52,285 - INFO - Received API request <Response [200]>: took 1.300438 sec
+2018-06-04 10:52:53,123 - INFO - <Record of player 1 in roster 1> with <Match stats 1 1> added to <Player 'fine_temporis' 'pc-kakao'>
+2018-06-04 10:52:53,123 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/matches/8b8164ad-af3e-4f03-9ed9-7742743e7a65
+2018-06-04 10:52:53,451 - INFO - Received API request <Response [200]>: took 0.328127 sec
+2018-06-04 10:52:53,458 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-kakao/2018/06/01/06/39/8f394c2e-6566-11e8-91cf-0a5864626f70-telemetry.json
+2018-06-04 10:52:54,912 - INFO - Received API request <Response [200]>: took 1.453202 sec
+2018-06-04 10:52:55,689 - INFO - <Record of player 1 in roster 2> with <Match stats 2 2> added to <Player 'fine_temporis' 'pc-kakao'>
+2018-06-04 10:52:55,690 - INFO - Sent API request to https://api.playbattlegrounds.com/shards/pc-kakao/matches/368675d6-e5d5-4116-b348-24c79a2941a1
+2018-06-04 10:52:55,960 - INFO - Received API request <Response [200]>: took 0.269495 sec
+2018-06-04 10:52:55,966 - INFO - Sent API request to https://telemetry-cdn.playbattlegrounds.com/bluehole-pubg/pc-kakao/2018/06/01/06/44/49d5cea5-6567-11e8-91cf-0a5864626f70-telemetry.json
+2018-06-04 10:52:57,046 - INFO - Received API request <Response [200]>: took 1.079096 sec
+2018-06-04 10:52:57,673 - INFO - <Record of player 1 in roster 3> with <Match stats 3 3> added to <Player 'fine_temporis' 'pc-kakao'>
+2018-06-04 10:53:02,150 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:53:02,151 - INFO - template folder: ../templates
+2018-06-04 10:53:03,728 - INFO - static folder: /home/cabox/workspace/dev/src/pubgi/../static
+2018-06-04 10:53:03,729 - INFO - template folder: ../templates

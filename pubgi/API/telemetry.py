@@ -102,7 +102,7 @@ class TeleProcessor:
         return item_finds
     
     def getMagneticXY(self):
-        """Get magnetic centres and radii."""
+        """Get magnetic centre coordinates and radii."""
         
         gamestate_data = [data for data in self.telemetry if data['_T']=='LogGameStatePeriodic']
         magnetic_raw = [{'x' : data['gameState']['safetyZonePosition']['x'], 

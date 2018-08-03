@@ -7,7 +7,7 @@
 {% endblock %}
 {% block content %}
 <div class="region-select mt-5">
-    <h2>지역 선택</h2>
+    <h2>지역 선택: {{ region | upper }}</h2>
     <div class="btn-group">
         <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-krjp')"> <span class="black-text">KR</span></button>
         <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-as')">AS</button>
@@ -22,7 +22,7 @@
     </div>
 </div>
 <div class="mode-select mt-5">
-    <h2>모드 선택</h2>
+    <h2>모드 선택: {{ mode | upper }}</h2>
     <div class="btn-group">
         <button class="btn btn-light" type="button" onclick="javascript:change_mode('solo')"> <span class="black-text">솔로</span></button>
         <button class="btn btn-elegant" type="button" onclick="javascript:change_mode('duo')"> 듀오 </button>
@@ -47,16 +47,18 @@
     <!-- table body -->
     <tbody>
         {% for leader in leaders %}
-        <tr>
-            <th scope="row">{{ loop.index }}</th>
-            <td>{{ leader.player.name }}</td>
-            <td>{{ leader.rating | int }}</td>
-            <td>{{ (leader.top10 / leader.games * 100) | round(1) }}%</td>
-            <td>{{ (leader.win / leader.games * 100) | round(1) }}%</td>
-            <td>{{ (leader.kills / leader.death) | round(2) }}</td>
-            <td>{{ (leader.damage / leader.games) | int }}</td>
-            <td>{{ (leader.place / leader.games) | round(1) }}</td>
-        </tr>
+            {% if leader.games %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ leader.player.name }}</td>
+                <td>{{ leader.rating | int }}</td>
+                <td>{{ (leader.top10 / leader.games * 100) | round(1) }}%</td>
+                <td>{{ (leader.win / leader.games * 100) | round(1) }}%</td>
+                <td>{{ (leader.kills / leader.death) | round(2) }}</td>
+                <td>{{ (leader.damage / leader.games) | int }}</td>
+                <td>{{ (leader.place / leader.games) | round(1) }}</td>
+            </tr>
+            {% endif %}
         {% endfor %}
     </tbody>
 <!-- table body -->

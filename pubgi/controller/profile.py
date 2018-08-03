@@ -188,4 +188,4 @@ def show_stats(player_name):
     if not player:
         return redirect(url_for('.show_profile', player_name=player_name, region=region))
     
-    return render_template('placeholder.html', player=player)
+    return render_template('profile_statistics.html', player=player)

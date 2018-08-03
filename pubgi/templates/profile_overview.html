@@ -40,11 +40,21 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.solo[-1].kills / player.solo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small>
+                                <p class="p-stats">
+                                    {% if player.solo[-1].death != 0 %}
+                                    <strong class="red-text">{{ (player.solo[-1].kills / player.solo[-1].death) | round(2) }}</strong>
+                                    {% else %}
+                                    <strong class="red-text">{{ player.solo[-1].kills | round(2) }}</strong>
+                                    {% endif %}
+                                </p>
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
-                                <small>생존</small><p class="p-stats">{{ (player.solo[-1].timeSurvived / player.solo[-1].games / 60) | int }}분 {{ ((player.solo[-1].timeSurvived / player.solo[-1].games) % 60) | int }}초</p><small class="small-top-percentile">상위 %</small>
+                                <small>생존</small>
+                                <p class="p-stats">{{ (player.solo[-1].timeSurvived / player.solo[-1].games / 60) | int }}분 {{ ((player.solo[-1].timeSurvived / player.solo[-1].games) % 60) | int }}초</p>
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                         </div>
                     </li>
@@ -64,7 +74,13 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.solo[-1].headshotKills / player.solo[-1].kills * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small>
+                                {% if player.solo[-1].kills != 0 %}
+                                <p class="p-stats">{{ (player.solo[-1].headshotKills / player.solo[-1].kills * 100) | round(1) }}%</p>
+                                {% else %}
+                                <p class="p-stats">{{ 0 | round(1) }}%</p>
+                                {% endif %}
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->
@@ -114,7 +130,15 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.duo[-1].kills / player.duo[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small>
+                                <p class="p-stats">
+                                    {% if player.duo[-1].death != 0 %}
+                                    <strong class="red-text">{{ (player.duo[-1].kills / player.duo[-1].death) | round(2) }}</strong>
+                                    {% else %}
+                                    <strong class="red-text">{{ player.duo[-1].kills | round(2) }}</strong>
+                                    {% endif %}
+                                </p>
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
@@ -138,7 +162,13 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.duo[-1].headshotKills / player.duo[-1].kills * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small>
+                                {% if player.duo[-1].kills != 0 %}
+                                <p class="p-stats">{{ (player.duo[-1].headshotKills / player.duo[-1].kills * 100) | round(1) }}%</p>
+                                {% else %}
+                                <p class="p-stats">{{ 0 | round(1) }}%</p>
+                                {% endif %}
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->
@@ -188,7 +218,15 @@
                         <div class="row">
                             <!-- K/D -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>K/D</small><p class="p-stats"><strong class="red-text">{{ (player.squad[-1].kills / player.squad[-1].death) | round(2) }}</strong></p><small class="small-top-percentile">상위 %</small>
+                                <small>K/D</small>
+                                <p class="p-stats">
+                                    {% if player.squad[-1].death != 0 %}
+                                    <strong class="red-text">{{ (player.squad[-1].kills / player.squad[-1].death) | round(2) }}</strong>
+                                    {% else %}
+                                    <strong class="red-text">{{ player.squad[-1].kills | round(2) }}</strong>
+                                    {% endif %}
+                                </p>
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average time survived -->
                             <div class="col-md-6 m-0 pr-0">
@@ -212,7 +250,13 @@
                         <div class="row">
                             <!-- headshot % -->
                             <div class="col-md-6 m-0 pl-0">
-                                <small>헤드샷</small><p class="p-stats">{{ (player.squad[-1].headshotKills / player.squad[-1].kills * 100) | round(1) }}%</p><small class="small-top-percentile">상위 %</small>
+                                <small>헤드샷</small>
+                                {% if player.squad[-1].kills != 0 %}
+                                <p class="p-stats">{{ (player.squad[-1].headshotKills / player.squad[-1].kills * 100) | round(1) }}%</p>
+                                {% else %}
+                                <p class="p-stats">{{ 0 | round(1) }}%</p>
+                                {% endif %}
+                                <small class="small-top-percentile">상위 %</small>
                             </div>
                             <!-- average kill distance -->
                             <!-- average damage -->

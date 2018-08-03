@@ -107,10 +107,9 @@ def update(player_id):
 
                         match_exist.info = match_info
                         
+                        """
                         telemetry_data = getTelemetry(data[4])
                         tele_exist = mongo.db.matches.find_one({'matchID' : pubg_match_id})
-
-                        """
                         if not tele_exist:
                             filter_tele = filterTelemetry(telemetry_data, ["LogItemPickup", "LogPlayerPosition", "LogGameStatePeriodic", "LogPlayerKill"])
                             mongo.db.matches.insert({'matchID' : pubg_match_id, 

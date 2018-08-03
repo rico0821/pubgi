@@ -7,7 +7,6 @@
     :copyright: (c) 2018 by rico0821.
     
 """
-
 from datetime import timedelta
 from uuid import uuid4
 

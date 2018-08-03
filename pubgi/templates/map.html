@@ -110,11 +110,12 @@
                 marker.type = type;
                 if (type=='kills') {
                     marker.sprite.src = "{{ url_for('static', filename='img/kill_marker.png') }}";
+                    marker.y = y - marker.height/2;
                 } else if (type == 'items') {
                     marker.sprite.src = "{{ url_for('static', filename='img/item_marker.png') }}";
+                    marker.y = y
                 }
                 marker.x = x - marker.width/2;
-                marker.y = y - marker.height/2;
                 Markers.push(marker);
             }
             redraw();

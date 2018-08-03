@@ -9,7 +9,6 @@
     :copyright: (c) 2018 by rico0821.
     
 """
-
 from flask_pymongo import PyMongo
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker

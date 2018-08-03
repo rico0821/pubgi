@@ -23,7 +23,7 @@ def search():
     """
     Search for a player.
     
-    FORM: search_word
+    FORM: search_word, region
     
     1. For each region:
         i) Check whether PUBG player ID for player with given name and region exists:
@@ -41,37 +41,37 @@ def search():
     regions = current_app.config['REGIONS']
     season = current_app.config['CURRENT_SEASON']
     query = request.form['search_word']
+    region = request.form['region']
     
     query_lower = query.lower()
     
-    for region in regions:
-        
-        exist = False
-        player_id = getPlayerId(region, query, api_key)
-        
-        if player_id:
-            exist = dao.query(Player).filter_by(pubgID=player_id).first()
-        
-        if player_id and not exist:
-            try:
-                new_player = Player(query, player_id, region)
-                new_soloStats = SoloStats(season)
-                new_duoStats = DuoStats(season)
-                new_squadStats = SquadStats(season)
-                dao.add_all([new_player, new_soloStats, new_duoStats, new_squadStats])
-                
-                new_player.solo.append(new_soloStats)
-                new_player.duo.append(new_duoStats)
-                new_player.squad.append(new_squadStats)
+    exist = False
+    player_id = getPlayerId(region, query, api_key)
 
-                dao.commit()
+    if player_id:
+        exist = dao.query(Player).filter_by(pubgID=player_id).\
+                                  filter_by(region=region).first()
 
-                Log.info('New player %r added.' % new_player)
-            
-            except Exception as e:
-                dao.rollback()
-                Log.error(str(e))
-                raise e
+    if player_id and not exist:
+        try:
+            new_player = Player(query, player_id, region)
+            new_soloStats = SoloStats(season)
+            new_duoStats = DuoStats(season)
+            new_squadStats = SquadStats(season)
+            dao.add_all([new_player, new_soloStats, new_duoStats, new_squadStats])
+
+            new_player.solo.append(new_soloStats)
+            new_player.duo.append(new_duoStats)
+            new_player.squad.append(new_squadStats)
+
+            dao.commit()
+
+            Log.info('New player %r added.' % new_player)
+
+        except Exception as e:
+            dao.rollback()
+            Log.error(str(e))
+            raise e
                 
     results = dao.query(Player).filter(func.lower(Player.name)==query_lower).all()
     
