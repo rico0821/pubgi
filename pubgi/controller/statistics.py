@@ -16,6 +16,7 @@ from sqlalchemy import desc
 
 from pubgi.database import dao
 from pubgi.pubgi_blueprint import pubgi
+from pubgi.model.average import WinnerAverage
 from pubgi.model.player import Player, SoloStats, DuoStats, SquadStats
 
 
@@ -25,6 +26,12 @@ def show_about():
     
     return render_template('about.html')
 
+@pubgi.route('/info')
+def show_info():
+    """Show info page."""
+
+    return render_template('placeholder.html')
+    
 @pubgi.route('/leaderboard')
 def show_leaderboard():
     """
@@ -66,6 +73,25 @@ def show_leaderboard():
 
 @pubgi.route('/statistics')
 def show_statistics():
-    """Show statistics page."""
+    """
+    Show statistics page.
+
+    ARGS: region, mode
+    """
     
-    return render_template('placeholder.html')
+    region = request.args.get('region', '')
+    mode = request.args.get('mode', '')
+
+    if not region: 
+        region = 'pc-krjp'
+    if not mode:
+        mode = 'solo'
+
+    stats = dao.query(WinnerAverage).\
+                       filter_by(region=region).\
+                       filter_by(mode=mode).all()
+    
+
+    return render_template('statistics.html', region=region,
+                                              mode=mode,
+                                              stats=stats)

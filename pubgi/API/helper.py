@@ -23,7 +23,7 @@ def _make_url(region, query_type, query_filter=None, query=None):
     
     """
     
-    url = 'https://api.playbattlegrounds.com/shards/' + region + '/' + query_type
+    url = 'https://api.pubg.com/shards/' + region + '/' + query_type
     
     if query_filter:
         url = url + '?filter[' + query_filter + ']=' + query
@@ -134,11 +134,11 @@ def _processParticipantData(match_data, player_id):
     """
     
     try:
-        participant_data = next(data['attributes']['stats'] \
-                            for data in match_data['included'] \
-                            if data['type']=='participant' and \
+        participant_data = next(data['attributes']['stats']
+                            for data in match_data['included']
+                            if data['type']=='participant' and
                             data['attributes']['stats']['playerId'] == player_id)
-        
+
     except Exception as e:
         raise e
         
@@ -169,8 +169,8 @@ def _processRosterData(match_data, player_id):
     """
     
     try:
-        participant_id = next(data['id'] for data in match_data['included'] \
-                             if data['type']=='participant' and \
+        participant_id = next(data['id'] for data in match_data['included'] 
+                             if data['type']=='participant' and 
                              data['attributes']['stats']['playerId']==player_id)
         
         for data in match_data['included']:
@@ -191,14 +191,53 @@ def _processTelemetryURL(match_data):
     """
     
     try: 
-        url = next(data['attributes']['URL'] for data in match_data['included'] \
+        url = next(data['attributes']['URL'] for data in match_data['included']
                       if data['type']=='asset')
         
     except Exception as e:
         raise e
         
     return url
+
+def _processWinnerIds(match_data):
+    """
+    Find winner ID from match data.
+
+    ARGS: match_data
+
+    """
+
+    try:
+        win_roster = next(roster['relationships']['participants']['data']
+                                        for roster in match_data['included']
+                                              if roster['type']=='roster'
+                                    and roster['attributes']['won']=='true')
+
+        winner_ids = [winner['id'] for winner in win_roster]
+
+        return winner_ids
+
+    except StopIteration:
+        return []
+
+def _processWinParticipantData(match_data, participant_id):
+    """
+    Find participant's stats from match data using participant id.
+    
+    ARGS: match_data, participant_id
+    
+    """
+    
+    try:
+        participant_data = next(data['attributes']['stats']
+                            for data in match_data['included']
+                            if data['id'] == participant_id)
+
+    except Exception as e:
+        raise e
         
+    return participant_data
+
 def getPlayerId(region, player, api_key):
     """
     Get a player's game id.
@@ -260,6 +299,7 @@ def getTelemetry(url):
       "Accept" : "application/vnd.api+json"
     }
     result = None
+
     try:
         Log.info('Sent API request to %s' % url)
         start_time = time.time()
@@ -282,6 +322,32 @@ def filterTelemetry(telemetry, filters):
         raise e
 
     return filter_telemetry
+
+def getWinnerData(region, api_key):
+    """
+    Get winner average data.
+
+    ARGS: region, api_key
+
+    """
+    try:
+        samples = _getRequest(region, 'samples', None, None, api_key)
+        matches = samples['data']['relationships']['matches']['data']
+        match_ids = [match['id'] for match in matches]
+        
+        match_dataset = [_getMatch(region, match_id, api_key) 
+                                  for match_id in match_ids[:5]] #CHANGE!
+
+        winner_data = [{**_processWinParticipantData(match_data, winner_id),
+                                        **_processMatchData(match_data)}
+                                            for match_data in match_dataset
+                            for winner_id in _processWinnerIds(match_data)
+                                                             if winner_id]
+        return winner_data
+
+    except Exception as e:
+        raise e
+
 
 shardDict = {
     'pc-kakao' : Shard.PC_KAKAO,

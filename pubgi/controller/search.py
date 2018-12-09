@@ -73,7 +73,8 @@ def search():
             Log.error(str(e))
             raise e
                 
-    results = dao.query(Player).filter(func.lower(Player.name)==query_lower).all()
+    results = dao.query(Player).filter(func.lower(Player.name)==query_lower).\
+                                filter_by(region=region).all()
     
     if len(results) == 1:
         player = results[0]

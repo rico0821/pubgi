@@ -13,4 +13,4 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-__all__ = ['player', 'match']
+__all__ = ['player', 'match', 'average']

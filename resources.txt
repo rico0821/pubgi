@@ -1,0 +1,11 @@
+http://game-icons.net/tags/shield.html          game icons
+
+https://tsicons.com/detail/overwatch-rank-icons#info    overwatch rank icons
+
+https://mlab.com/                cloud MongoDB hosting 
+
+http://bcho.tistory.com/1158       tutorial on big data
+
+https://github.com/pubg             PUBG assets
+
+https://leafletjs.com/examples/quick-start/    leaflet for interactive maps

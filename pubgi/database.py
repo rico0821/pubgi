@@ -33,6 +33,7 @@ class DBManager:
     def init_db():
         from pubgi.model import player
         from pubgi.model import match
+        from pubgi.model import average
         from pubgi.model import Base
         Base.metadata.create_all(bind=DBManager.__engine)
 

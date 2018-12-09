@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+<!-- region selector -->
+<div class="region-select mt-5">
+    <h2>지역 선택: {{ region | upper }}</h2>
+    <div class="btn-group">
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-krjp')"> <span class="black-text">KR</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-as')">AS</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-jp')"><span class="black-text">JP</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-kakao')">KAKAO </button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-na')"><span class="black-text">NA</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-sa')">SA</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-eu')"><span class="black-text">EU</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-oc')">OC</button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_region('pc-sea')"><span class="black-text">SEA</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_region('pc-ru')">RU</button>
+    </div>
+</div>
+<!-- end of region selector -->
+<!-- mode selector -->
+<div class="mode-select mt-5">
+    <h2>모드 선택: {{ mode | upper }}</h2>
+    <div class="btn-group">
+        <button class="btn btn-light" type="button" onclick="javascript:change_mode('solo')"> <span class="black-text">솔로</span></button>
+        <button class="btn btn-elegant" type="button" onclick="javascript:change_mode('duo')"> 듀오 </button>
+        <button class="btn btn-light" type="button" onclick="javascript:change_mode('squad')"> <span class="black-text">스쿼드</span></button>
+    </div>
+</div>
+<!-- end of mode selector -->
+<!-- leaderboard table -->
+<table id="leaderboard" class="table table-responsive-md mt-5 table-striped">
+    <!-- table head -->
+    <thead class="bg-warning">
+        <tr>
+            <th class="table-head">지표</th>
+            <th class="th">에란겔</th>
+            <th class="th">미라마</th>
+            <th class="th">사녹</th>
+        </tr>
+    </thead>
+    <!-- end of table head-->
+    <!-- table body -->
+    <tbody>
+        <tr>
+            <th scope="row">킬</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">데미지</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">이동 거리</th>
+            <td>{</td>
+        </tr>
+        <tr>
+            <th scope="row">힐</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">부스트</th>
+            <td></td>
+        </tr>
+    </tbody>
+<!-- table body -->
+</table>
+<!-- end of table -->
+<!-- region selector script -->
+<script type="text/javascript">
+
+    var region = "{{ region }}"; 
+
+    function change_region(region) {
+        region = region;
+        window.location = "{{ url_for('pubgi.show_statistics') }}" + '?' + 'mode=' + mode + '&region=' + region;
+    }
+
+    function change_mode(mode) {
+        mode = mode;
+        window.location = "{{ url_for('pubgi.show_statistics') }}" + '?' + 'mode=' + mode + '&region=' + region;
+    }
+ 
+</script>
+{% endblock %}

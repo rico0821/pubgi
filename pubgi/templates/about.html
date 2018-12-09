@@ -19,15 +19,15 @@
                     <div class="col-md-4 offset-md-1 mx-3">
                         <div class="overlay my-3">
                         <!-- featured image -->
-                            <img src="../static/img/beta_2_update.png"  style="height:12rem" class="img-fluid" alt="leaderboard image">
+                            <img src="{{ url_for('static', filename='img/under_construction.png') }}"" style="height:12rem" class="img-fluid">
                         </div>
                     </div>
                     <!-- end of grid column -->
                     <!-- grid column -->
                     <div class="col-md-7 text-left ml-3 mt-3 my-auto">
                         <!-- excerpt -->
-                        <h4 class="mb-4 align-middle"><strong>Beta v.0.2 업데이트</strong></a></h4>
-                        <p class="align-middle">리더보드 지역/모드 표시, 맵 서비스 버그 개선, 지역 검색 추가</p>
+                        <h4 class="mb-4 align-middle"><strong>Beta v.0.3 업데이트</strong></a></h4>
+                        <p class="align-middle">커밍쑨</p>
                         <!-- end of excerpt -->
                     </div>
                     <!-- end of grid column -->
@@ -44,8 +44,34 @@
                     <!-- grid column -->
                     <div class="col-md-4 offset-md-1 mx-3">
                         <div class="overlay my-3">
+                        <!-- featured image -->
+                            <img src="{{ url_for('static', filename='img/beta_2_update.png') }}"" style="height:12rem" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- end of grid column -->
+                    <!-- grid column -->
+                    <div class="col-md-7 text-left ml-3 mt-3 my-auto">
+                        <!-- excerpt -->
+                        <h4 class="mb-4 align-middle"><strong>Beta v.0.2 업데이트</strong></a></h4>
+                        <p class="align-middle">리더보드 지역/모드 표시, 맵 서비스 버그 개선, 지역 검색 추가</p>
+                        <!-- end of excerpt -->
+                    </div>
+                    <!-- end of grid column -->
+                </div>
+                <!-- end of grid row -->
+            </div>
+        </div>
+        <!-- end of card 2 -->
+        <!-- card 3 -->
+        <div class="card mb-3 text-center">
+            <div class="card-body">
+                <!-- grid row -->
+                <div class="row">
+                    <!-- grid column -->
+                    <div class="col-md-4 offset-md-1 mx-3">
+                        <div class="overlay my-3">
                             <!-- featured image -->
-                            <img src="../static/img/beta_1_update.png"  style="height:12rem" class="img-fluid" alt="leaderboard image">
+                            <img src="{{ url_for('static', filename='img/beta_1_update.png') }}"" style="height:12rem" class="img-fluid">
                         </div>
                     </div>
                     <!-- end of grid column -->
@@ -61,6 +87,6 @@
                 <!-- end of grid row -->
             </div>
         </div>
-        <!-- end of card 2 -->
+        <!-- end of card 3 -->
 </div>
 {% endblock %}

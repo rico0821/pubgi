@@ -10,12 +10,14 @@
 """
 from datetime import datetime
 
+import pandas as pd
 from flask import abort, current_app, jsonify, redirect, render_template, url_for
 
 from pubgi.database import dao, mongo
 from pubgi.pubgi_blueprint import pubgi
 from pubgi.pubgi_logger import Log
-from pubgi.API.helper import getPlayerStats, getTelemetry, filterTelemetry
+from pubgi.API.helper import getPlayerStats, getTelemetry, getWinnerData, filterTelemetry
+from pubgi.model.average import WinnerAverage
 from pubgi.model.match import Match, MatchInfo, MatchStats, Record, Roster
 from pubgi.model.player import Player, SoloStats, DuoStats, SquadStats
 
@@ -160,5 +162,73 @@ def update(player_id):
     
     player.updateTime = datetime.utcnow()
     dao.commit()
+
+    return jsonify(result=True)
+
+@pubgi.route('/statistics/update_winner')
+def update_winner():
+    """
+    Update winner average statistics.
+
+    """
+
+    api_key = current_app.config['API_KEY']
+    regions = current_app.config['REGIONS']
+    modes = current_app.config['MODES']
+    mapNames = current_app.config['MAP_NAMES']
+
+    random_pick = dao.query(WinnerAverage).first()
+
+    if not random_pick:
+        new_average = [WinnerAverage(region, mode, mapName) 
+                                      for region in regions
+                                      for mode in modes
+                                      for mapName in mapNames]
+        try:
+            dao.add_all(new_average)
+            dao.commit()
+            Log.info('New winner average stats added to DB!')
+
+        except Exception as e:
+            dao.rollback()
+            Log.error(str(e))
+            return jsonify(result=False)
+
+    else:
+        diff = datetime.utcnow() - random_pick.updateTime    
+        if diff.seconds < 82800:
+            pass
+            #return jsonify(result=False)
+    
+    
+    averages = dao.query(WinnerAverage).all()
+    
+    winner_data = [(region, getWinnerData(region, api_key)) for region in regions]
+    
+    final_data = [{'region': data1[0], 
+                   'mode': data2['gameMode'],
+                   'mapName': data2['mapName'],
+                   'kills': data2['kills'],
+                   'damage': data2['damageDealt'],
+                   'distance': data2['walkDistance']+data2['rideDistance']
+                   }
+                   for data1 in winner_data for data2 in data1[1]]
+
+    map_keys = [('Erangel_Main', 'erangel'), 
+               ('Desert_Main', 'miramar'),
+               ('Savage_Main', 'sanhok')]
+    
+    df = pd.DataFrame(final_data)
+    print(df)
+    """     
+    for region_winners in winner_data:
+        for winner in region_winners:
+            for mode in modes:
+                for map_key in map_keys:
+                    if winner[1]['gameMode']==mode and winner[1]['mapName']==map_key[0]:
+                        average = dao.query(WinnerAverage).\
+                                      filter_by(mode=mode).\
+                             filter_by(mapName=map_key[1]).first()
+    """
 
     return jsonify(result=True)
