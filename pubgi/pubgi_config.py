@@ -23,10 +23,10 @@ class pubgiConfig:
     
     # MongoDB
     MONGO_DBNAME = 'teledb'
-    MONGO_HOST = 'ds247619.mlab.com'
-    MONGO_PORT = 47619
-    MONGO_USERNAME = 'pubgg'
-    MONGO_PASSWORD = 'rhemdfovj2018'
+    MONGO_HOST = ''
+    MONGO_PORT = 
+    MONGO_USERNAME = ''
+    MONGO_PASSWORD = ''
     
     # Session
     PERMANENT_SESSION_LIFETIME = 60 * 60
